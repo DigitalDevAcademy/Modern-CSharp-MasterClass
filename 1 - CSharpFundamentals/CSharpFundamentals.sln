@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - System.Console", "01 - System.Console\01 - System.Console.csproj", "{6A9CD7DE-60E0-496F-89E0-8267CCF75C98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Variables", "01 - Variables\01 - Variables.csproj", "{27EBDDF3-4D43-4A88-808B-4AB91C5C5092}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Variables", "02 - Variables\02 - Variables.csproj", "{27EBDDF3-4D43-4A88-808B-4AB91C5C5092}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - System.Console", "02 - System.Console\02 - System.Console.csproj", "{6A9CD7DE-60E0-496F-89E0-8267CCF75C98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Expressions And Operators", "03 - Expressions And Operators\03 - Expressions And Operators.csproj", "{D95F8276-7B4E-42AA-ADC1-37E37FF1E73C}"
 EndProject
