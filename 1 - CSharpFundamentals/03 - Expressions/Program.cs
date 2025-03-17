@@ -8,7 +8,7 @@ Console.WriteLine(sum);
 // Basic expression with additive binary operator and variables
 int number1 = 5;
 int number2 = 5;
-int sum2 = number1 + number2;
+int numberSum = number1 + number2;
 Console.WriteLine(sum);
 
 // Basic expression with logical not unary opeartor
