@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Variables", "01 - Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - System.Console Class", "02 - System.Console Class\02 - System.Console Class.csproj", "{6A9CD7DE-60E0-496F-89E0-8267CCF75C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Expressions And Operators", "03 - Expressions And Operators\03 - Expressions And Operators.csproj", "{D95F8276-7B4E-42AA-ADC1-37E37FF1E73C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Expressions", "03 - Expressions\03 - Expressions.csproj", "{D95F8276-7B4E-42AA-ADC1-37E37FF1E73C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Order Of Evaluations", "04 - Order Of Evaluations\04 - Order Of Evaluations.csproj", "{D0DB76C3-719F-417E-A1D3-04A36B1F4883}"
 EndProject
