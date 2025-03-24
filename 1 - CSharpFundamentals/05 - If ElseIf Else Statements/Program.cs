@@ -1,14 +1,22 @@
-﻿int score = 75;
+﻿// Standard if elseif else statement, without pattern matching
 
-if (score >= 90)
+int coffeeSize = 2;
+bool hasSugar = true;
+bool hasMilk = false;
+
+if (coffeeSize == 1 && hasMilk)
 {
-    Console.WriteLine("Excellent!");
+    Console.WriteLine("Small coffee with milk");
 }
-else if (score >= 60)
+else if (coffeeSize == 2 && hasSugar)
 {
-    Console.WriteLine("Good job, keep improving!");
+    Console.WriteLine("Medium coffee with sugar");
+}
+else if (coffeeSize == 3 && hasSugar && hasMilk)
+{
+    Console.WriteLine("Large coffee with sugar and milk");
 }
 else
 {
-    Console.WriteLine("You need to study more.");
+    Console.WriteLine("Unknown coffee size");
 }
