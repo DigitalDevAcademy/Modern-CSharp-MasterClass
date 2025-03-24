@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Expressions", "03 - Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Order Of Evaluations", "04 - Order Of Evaluations\04 - Order Of Evaluations.csproj", "{D0DB76C3-719F-417E-A1D3-04A36B1F4883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - If ElseIf Else Statements", "05 - If ElseIf Else Statements\05 - If ElseIf Else Statements.csproj", "{EC3EA14A-4E85-47A2-8291-3725790B9A52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - If Statement", "05 - If Statement\05 - If Statement.csproj", "{EC3EA14A-4E85-47A2-8291-3725790B9A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Switch Case Statements", "06 - Switch Case Statements\06 - Switch Case Statements.csproj", "{3318D917-DBEC-4EB6-8B74-65648E9CA82E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Switch Statement", "06 - Switch Statement\06 - Switch Statement.csproj", "{3318D917-DBEC-4EB6-8B74-65648E9CA82E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - For Loop", "07 - For Loop\07 - For Loop.csproj", "{5F29FA13-330B-4A66-9B6E-F7CCC3B55AB3}"
 EndProject
