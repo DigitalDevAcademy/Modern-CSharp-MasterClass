@@ -6,5 +6,3 @@ Console.Write(name);
 Console.Write(age);
 
 Console.Clear();
-
-Console.WriteLine("User Data Removed");
