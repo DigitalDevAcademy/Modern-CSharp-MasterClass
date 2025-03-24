@@ -1,4 +1,6 @@
-﻿Console.WriteLine("--- Forward Iteration ---");
+﻿// Both have a predictable number of iterations
+
+Console.WriteLine("--- Forward Iteration ---");
 for (int page = 1; page <= 5; page++)
 {
     Console.WriteLine($"Page {page}");

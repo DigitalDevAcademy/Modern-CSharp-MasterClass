@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var input = Console.ReadLine();
+Console.WriteLine($"User input: {input}");
+
+// The while loop will run an unknown number of times — everything depends on the user's input
+while (!string.IsNullOrEmpty(input))
+{
+    input = Console.ReadLine();
+    Console.WriteLine($"User input: {input}");
+}
