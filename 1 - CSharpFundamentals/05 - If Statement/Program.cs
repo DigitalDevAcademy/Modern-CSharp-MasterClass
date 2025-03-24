@@ -1,20 +1,18 @@
 ﻿// Standard if elseif else statement, without pattern matching
 
 int coffeeSize = 2;
-bool hasSugar = true;
-bool hasMilk = false;
 
-if (coffeeSize == 1 && hasMilk)
+if (coffeeSize == 1)
 {
-    Console.WriteLine("Small coffee with milk");
+    Console.WriteLine("Small coffee");
 }
-else if (coffeeSize == 2 && hasSugar)
+else if (coffeeSize == 2)
 {
-    Console.WriteLine("Medium coffee with sugar");
+    Console.WriteLine("Medium coffee");
 }
-else if (coffeeSize == 3 && hasSugar && hasMilk)
+else if (coffeeSize == 3)
 {
-    Console.WriteLine("Large coffee with sugar and milk");
+    Console.WriteLine("Large coffee");
 }
 else
 {

@@ -1,6 +1,6 @@
 ﻿// Standard case statement, without pattern matching
 
-int coffeeSize = 3;
+int coffeeSize = 2;
 
 switch (coffeeSize)
 {
