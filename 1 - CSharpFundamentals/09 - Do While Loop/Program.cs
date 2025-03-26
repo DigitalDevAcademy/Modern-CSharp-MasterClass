@@ -9,6 +9,6 @@
 do
 {
     input = Console.ReadLine();
-    Console.WriteLine($"User input: {input}");
+    Console.WriteLine(input);
 
 } while (!string.IsNullOrEmpty(input));

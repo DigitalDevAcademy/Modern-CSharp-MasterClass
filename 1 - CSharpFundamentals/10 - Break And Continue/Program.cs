@@ -6,7 +6,7 @@ for (int page = 1; page <= 5; page++)
         break;
     }
 
-    Console.WriteLine($"Page {page}");
+    Console.WriteLine(page);
 }
 
 Console.WriteLine("--- Loop With Continue ---");
@@ -17,5 +17,5 @@ for (int page = 1; page <= 5; page++)
         continue;
     }
 
-    Console.WriteLine($"Page {page}");
+    Console.WriteLine(page);
 }
