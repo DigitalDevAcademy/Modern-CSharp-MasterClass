@@ -21,7 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - While Loop", "08 - Whi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Do While Loop", "09 - Do While Loop\09 - Do While Loop.csproj", "{FCBE1309-F26E-48E6-944D-0A045B3D3A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Break And Continue", "10 - Break And Continue\10 - Break And Continue.csproj", "{216C427A-FC19-442E-979E-93FA28CEB6EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Break", "10 - Break\10 - Break.csproj", "{216C427A-FC19-442E-979E-93FA28CEB6EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Continue", "11 - Continue\11 - Continue.csproj", "{4C70E1E9-D985-439A-B26C-34C7B9D653E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{216C427A-FC19-442E-979E-93FA28CEB6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{216C427A-FC19-442E-979E-93FA28CEB6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{216C427A-FC19-442E-979E-93FA28CEB6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
