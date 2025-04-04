@@ -18,6 +18,14 @@ Console.WriteLine(asciiCode);
 string firstLetterAsString = firstLetter.ToString();
 Console.WriteLine(firstLetterAsString);
 
+// Get length of the string
+int wordLength = word.Length;
+Console.WriteLine(wordLength);
+
+// Initialize an empty string
+string emptyString = string.Empty;
+Console.WriteLine(emptyString);
+
 // Please note that char and string are different types
 // char wrong = "A";            // This would cause an error
 // string alsoWrong = 'C';      // This would also cause an error
