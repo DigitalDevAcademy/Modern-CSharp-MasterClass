@@ -34,6 +34,7 @@ for (int i = 0; i < parts.Length; i++) // Print each part using a for loop
     Console.WriteLine(parts[i]);
 }
 
-Console.WriteLine(text.Substring(0, 5)); // Get substring starting at index 0 with length 5
+Console.WriteLine(text.Substring(0, 5));   // Takes 5 characters from index 0
+Console.WriteLine(text.Substring(0));      // Takes everything from index 0
 Console.WriteLine(string.Join(" ", wordList)); // Join the word list into one string with spaces
 Console.WriteLine();
