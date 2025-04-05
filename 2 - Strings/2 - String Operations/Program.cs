@@ -26,7 +26,7 @@ Console.WriteLine("[" + untrimmedText.TrimStart() + "]"); // Trim spaces from st
 Console.WriteLine("[" + untrimmedText.TrimEnd() + "]"); // Trim spaces from end only
 Console.WriteLine();
 
-Console.WriteLine("String Building & Breaking");
+Console.WriteLine("String Breaking & Building");
 
 string[] parts = text.Split(' '); // Split 'text' into words using space
 for (int i = 0; i < parts.Length; i++) // Print each part using a for loop
