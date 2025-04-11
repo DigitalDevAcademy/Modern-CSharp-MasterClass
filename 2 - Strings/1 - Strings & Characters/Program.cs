@@ -1,8 +1,8 @@
-﻿// char represents is character and uses single quotes
+﻿// char represents is character and uses single quotes - known as a character literal
 char character = 'A';
 Console.WriteLine(character);
 
-// string represents a sequence of characters and uses double quotes
+// string represents a sequence of characters and uses double quotes - known as a string literal
 string text = "Adventure";
 Console.WriteLine(text);
 

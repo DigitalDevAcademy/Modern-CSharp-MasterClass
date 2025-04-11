@@ -41,7 +41,3 @@ for (int i = 0; i < parts.Length; i++)
     Console.WriteLine(parts[i]); // Print each part
 }
 Console.WriteLine();
-
-Console.WriteLine("String Joining");
-Console.WriteLine(string.Join(" ", parts)); // Join parts we split back into text using space character
-Console.WriteLine();

@@ -5,11 +5,19 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - Strings & Characters", "1 - Strings & Characters\1 - Strings & Characters.csproj", "{FD1B1B5F-47F0-4EF0-8575-E370B9E45D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - String Operations", "2 - String Operations\2 - String Operations.csproj", "{D842CADB-E116-49B7-BDBB-3016907831FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - String Concatenation", "2 - String Concatenation\2 - String Concatenation.csproj", "{D95439CE-8FF5-436E-B261-9E4F853827E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 - String Formatting", "3 - String Formatting\3 - String Formatting.csproj", "{D95439CE-8FF5-436E-B261-9E4F853827E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 - String Formatting", "3 - String Formatting\3 - String Formatting.csproj", "{D7317C11-2206-44CA-A340-97125DB13838}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 - StringBuilder", "4 - StringBuilder\4 - StringBuilder.csproj", "{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 - Escape Sequences", "4 - Escape Sequences\4 - Escape Sequences.csproj", "{D562E7D1-1F34-41AE-83C5-2EB7B728CD8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5 - Verbatim Strings", "5 - Verbatim Strings\5 - Verbatim Strings.csproj", "{E88BE3ED-EDB6-46CB-A4C5-11CDEF137A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6 - Raw String Literals", "6 - Raw String Literals\6 - Raw String Literals.csproj", "{B89F2106-3A3F-454A-9D26-FFF55B18CB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7 - StringBuilder", "7 - StringBuilder\7 - StringBuilder.csproj", "{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8 - String Operations", "8 - String Operations\8 - String Operations.csproj", "{D842CADB-E116-49B7-BDBB-3016907831FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +37,26 @@ Global
 		{D95439CE-8FF5-436E-B261-9E4F853827E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95439CE-8FF5-436E-B261-9E4F853827E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95439CE-8FF5-436E-B261-9E4F853827E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D562E7D1-1F34-41AE-83C5-2EB7B728CD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D562E7D1-1F34-41AE-83C5-2EB7B728CD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D562E7D1-1F34-41AE-83C5-2EB7B728CD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D562E7D1-1F34-41AE-83C5-2EB7B728CD8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9C963E0-77A8-4DD1-A6F4-DDCD58FE86BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7317C11-2206-44CA-A340-97125DB13838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7317C11-2206-44CA-A340-97125DB13838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7317C11-2206-44CA-A340-97125DB13838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7317C11-2206-44CA-A340-97125DB13838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E88BE3ED-EDB6-46CB-A4C5-11CDEF137A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88BE3ED-EDB6-46CB-A4C5-11CDEF137A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88BE3ED-EDB6-46CB-A4C5-11CDEF137A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88BE3ED-EDB6-46CB-A4C5-11CDEF137A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89F2106-3A3F-454A-9D26-FFF55B18CB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89F2106-3A3F-454A-9D26-FFF55B18CB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89F2106-3A3F-454A-9D26-FFF55B18CB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89F2106-3A3F-454A-9D26-FFF55B18CB47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
