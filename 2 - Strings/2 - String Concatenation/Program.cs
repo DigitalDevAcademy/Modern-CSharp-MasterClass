@@ -1,16 +1,16 @@
 ﻿var username = Console.ReadLine();
 string[] wordList = ["Welcome", "World", "!"];
 
-Console.WriteLine("+ or += Operator");
+// String concatenation using + (or +=) operator
 Console.WriteLine("Welcome back, " + username + "!");
 
 Console.WriteLine();
 
-Console.WriteLine("String.Concat Method");
+// String concatenation using string.Concat - either individual strings or an array of strings
 Console.WriteLine(string.Concat("Welcome back, ", username, "!"));
 Console.WriteLine(string.Concat(wordList));
 
 Console.WriteLine();
 
-Console.WriteLine("String.Join Method");
+// String concatenation using string.Join - uses a separator to concatenate strings
 Console.WriteLine(string.Join(" ", wordList));

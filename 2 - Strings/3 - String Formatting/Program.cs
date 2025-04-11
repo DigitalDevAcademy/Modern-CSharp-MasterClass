@@ -1,11 +1,12 @@
 ﻿var username = Console.ReadLine();
 
-Console.WriteLine("String.Format Method");
+// String formatting using string.Format
 Console.WriteLine(string.Format("Welcome back, {0}!", username));
 Console.WriteLine("Welcome back, {0}!", username);
 
 Console.WriteLine();
 
-// During C# 10 .NET 6 string interpolation has been dramatically improved
-Console.WriteLine("String Interpolation");
+/* String formatting using string interpolation
+ * During C# 10 .NET 6 string interpolation has been dramatically improved
+ */
 Console.WriteLine($"Welcome back, {username}!");

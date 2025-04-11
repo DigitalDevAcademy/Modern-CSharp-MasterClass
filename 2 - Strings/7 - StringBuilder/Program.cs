@@ -1,7 +1,9 @@
 ﻿using System.Text;
 
+// This simple list could be something we get from a database or another source
 string[] reportParts = ["many", "parts", "of", "a", "report"];
 var immutableString = string.Empty;
+
 var stringBuilder = new StringBuilder();
 
 Console.WriteLine("String Concatenation");
