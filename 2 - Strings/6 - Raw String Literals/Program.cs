@@ -5,19 +5,19 @@ var fileSize = "4 KB";
  * Also creating new lines with raw string literals
  * Introduced during C# 11 .NET 7
  */
-Console.WriteLine("");
-fileDetails = $"""
-File Location: "C:\Documents\File.txt"
-File Size: 4 KB
-""";
+fileDetails = $""" 
+    File Location: "C:\Documents\File.txt"
+    File Size: 4 KB
+    """;
 Console.WriteLine(fileDetails);
 
 Console.WriteLine();
 
 // Interpolated raw strings literals have the above mentioned benefits + interpolation
-Console.WriteLine("Interpolated Raw String Literals");
-fileDetails = $"""
-File Location: "C:\Documents\File.txt"
-File Size: {fileSize}
-""";
+fileDetails = $$""""
+    File Location: "C:\Documents\File.txt"
+    File Size: {{{fileSize}}}
+    """ More file information """
+    { No interpolated }
+    """";
 Console.WriteLine(fileDetails);
