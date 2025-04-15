@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - Enums", "1 - Enums\1 - Enums.csproj", "{9F402015-2A0A-4E87-88D6-2F05FE27CFBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - Stack vs Heap", "1 - Stack vs Heap\1 - Stack vs Heap.csproj", "{3C0F5989-617B-47C0-BF56-48226DC2A80D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - Stack vs Heap", "2 - Stack vs Heap\2 - Stack vs Heap.csproj", "{3C0F5989-617B-47C0-BF56-48226DC2A80D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 - Out vs Ref vs In", "3 - Out vs Ref vs In\3 - Out vs Ref vs In.csproj", "{FD81B700-BAA1-4E21-B498-019A2BE8D7B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - Out vs Ref vs In", "2 - Out vs Ref vs In\2 - Out vs Ref vs In.csproj", "{FD81B700-BAA1-4E21-B498-019A2BE8D7B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F402015-2A0A-4E87-88D6-2F05FE27CFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F402015-2A0A-4E87-88D6-2F05FE27CFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F402015-2A0A-4E87-88D6-2F05FE27CFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F402015-2A0A-4E87-88D6-2F05FE27CFBB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C0F5989-617B-47C0-BF56-48226DC2A80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C0F5989-617B-47C0-BF56-48226DC2A80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C0F5989-617B-47C0-BF56-48226DC2A80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
