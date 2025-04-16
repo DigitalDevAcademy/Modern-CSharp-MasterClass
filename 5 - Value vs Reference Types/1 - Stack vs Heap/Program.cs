@@ -1,6 +1,6 @@
 ﻿// Initializing a struct and a class with only one field
-UserStruct userStruct = new() { Id = 1 };
-UserClass userClass = new() { Id = 1 };
+UserStruct userStruct = new(1);
+UserClass userClass = new(1);
 
 // Printing both values before changing them
 Console.WriteLine($"UserStruct.Id: {userStruct.Id} | UserClass.Id: {userClass.Id}");
@@ -18,13 +18,13 @@ void ChangeUserId(UserStruct userStruct, UserClass userClass)
 }
 
 // Struct is a value type, so it is stored on the stack
-struct UserStruct
+struct UserStruct(int id)
 {
-    public int Id { get; set; }
+    public int Id { get; set; } = id;
 }
 
 // Class is a reference type, so it is stored on the heap
-class UserClass
+class UserClass(int id)
 {
-    public int Id { get; set; }
+    public int Id { get; set; } = id;
 }
