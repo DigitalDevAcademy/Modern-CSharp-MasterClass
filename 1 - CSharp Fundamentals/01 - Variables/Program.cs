@@ -1,4 +1,11 @@
-﻿// Whole numbers - used for counters and general-purpose integer values
+﻿/*
+ * Students please ignore this "pragma" line here and at the bottom of the file
+ * This is for suppressing warnings as it was intended to declare variables but never use them in this file
+ * in order to showcase how to write variables of all types.
+*/
+#pragma warning disable CS0219
+
+// Whole numbers - used for counters and general-purpose integer values
 int totalProducts = 50;
 
 // Very large whole numbers - used when whole numbers are needed but value might exceed int range
@@ -36,3 +43,5 @@ var isRunning = false;
 
 // Used when the type needs to be inferred
 var itemCount = 195;
+
+#pragma warning restore CS0219 // Variable is assigned but its value is never used
