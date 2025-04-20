@@ -44,4 +44,4 @@ var isRunning = false;
 // Used when the type needs to be inferred
 var itemCount = 195;
 
-#pragma warning restore CS0219 // Variable is assigned but its value is never used
+#pragma warning restore CS0219

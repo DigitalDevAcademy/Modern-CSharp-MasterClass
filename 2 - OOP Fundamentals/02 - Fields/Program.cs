@@ -14,5 +14,12 @@ public class Employee
 {
     public string name = string.Empty;
 
+    /*
+    * Students please ignore this "pragma" line here and at the bottom of the file
+    * This is for suppressing warnings as it was intended to declare a field but never use it
+    * in order to showcase how to write private fields in a class.
+    */
+    #pragma warning disable CS0414
     private double salary = 0; // Cannot access or modify a private field anywhere else except the class itself
+    #pragma warning restore CS0414
 }
