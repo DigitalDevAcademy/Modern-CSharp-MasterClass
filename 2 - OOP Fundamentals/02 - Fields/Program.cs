@@ -1,18 +1,29 @@
-﻿// Instantiate frist Employee object
-var employee1 = new Employee();
-employee1.name = "SomeEmployee1";
-// employee1.salary = 100000; // Cannot access salary, it is a private field
-Console.WriteLine($"Employee 1 name is {employee1.name}.");
+﻿// Instantiate frist Car object
+Car car1 = new();
+car1.make = "Toyota";
+car1.model = "Corolla";
+// car1.vin = "abc123"; // Cannot access vin, it is a private field
+Console.WriteLine($"Car1 make is {car1.make} and model is {car1.model}.");
 
-// Instantiate second Employee object
-var employee2 = new Employee();
-employee2.name = "SomeEmployee2";
-// employee2.salary = 100000; // Cannot access salary, it is a private field
-Console.WriteLine($"Employee 2 name is {employee1.name}.");
+// Instantiate second Car object
+Car car2 = new();
+car2.make = "Honda";
+car2.model = "Civic";
+// car2.vin = "abc456"; // Cannot access vin, it is a private field
+Console.WriteLine($"Car2 make is {car2.make} and model is {car2.model}.");
 
-public class Employee
+// Instantiate third Car object
+Car car3 = new();
+car3.make = "Ford";
+car3.model = "Mustang";
+// car3.vin = "abc789"; // Cannot access vin, it is a private field
+Console.WriteLine($"Car3 make is {car3.make} and model is {car3.model}.");
+
+public class Car
 {
-    public string name = string.Empty;
+    public string make = string.Empty;
+
+    public string model = string.Empty;
 
     /*
     * Students please ignore this "pragma" line here and at the bottom of the file
@@ -20,6 +31,6 @@ public class Employee
     * in order to showcase how to write private fields in a class.
     */
     #pragma warning disable CS0414
-    private double salary = 0; // Cannot access or modify a private field anywhere else except the class itself
+    private string vin = string.Empty; // Cannot access or modify a private field anywhere else except the class itself
     #pragma warning restore CS0414
 }
