@@ -11,19 +11,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Expressions", "03 - Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Order Of Evaluations", "04 - Order Of Evaluations\04 - Order Of Evaluations.csproj", "{D0DB76C3-719F-417E-A1D3-04A36B1F4883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - If Statement", "05 - If Statement\05 - If Statement.csproj", "{EC3EA14A-4E85-47A2-8291-3725790B9A52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Ternary Conditional Operator", "05 - Ternary Conditional Operator\05 - Ternary Conditional Operator.csproj", "{8E261659-32CA-4B2A-BF20-B293DCF70B64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Switch Statement", "06 - Switch Statement\06 - Switch Statement.csproj", "{3318D917-DBEC-4EB6-8B74-65648E9CA82E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - If Statement", "06 - If Statement\06 - If Statement.csproj", "{EC3EA14A-4E85-47A2-8291-3725790B9A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - For Loop", "07 - For Loop\07 - For Loop.csproj", "{5F29FA13-330B-4A66-9B6E-F7CCC3B55AB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Switch Statement", "07 - Switch Statement\07 - Switch Statement.csproj", "{3318D917-DBEC-4EB6-8B74-65648E9CA82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - While Loop", "08 - While Loop\08 - While Loop.csproj", "{4D6DCBD9-EE30-4427-A7CA-884E0DC9659F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - For Loop", "08 - For Loop\08 - For Loop.csproj", "{5F29FA13-330B-4A66-9B6E-F7CCC3B55AB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Do While Loop", "09 - Do While Loop\09 - Do While Loop.csproj", "{FCBE1309-F26E-48E6-944D-0A045B3D3A23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - While Loop", "09 - While Loop\09 - While Loop.csproj", "{4D6DCBD9-EE30-4427-A7CA-884E0DC9659F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Break", "10 - Break\10 - Break.csproj", "{216C427A-FC19-442E-979E-93FA28CEB6EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Do While Loop", "10 - Do While Loop\10 - Do While Loop.csproj", "{FCBE1309-F26E-48E6-944D-0A045B3D3A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Continue", "11 - Continue\11 - Continue.csproj", "{4C70E1E9-D985-439A-B26C-34C7B9D653E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Break", "11 - Break\11 - Break.csproj", "{216C427A-FC19-442E-979E-93FA28CEB6EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12 - Continue", "12 - Continue\12 - Continue.csproj", "{4C70E1E9-D985-439A-B26C-34C7B9D653E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C70E1E9-D985-439A-B26C-34C7B9D653E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E261659-32CA-4B2A-BF20-B293DCF70B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E261659-32CA-4B2A-BF20-B293DCF70B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E261659-32CA-4B2A-BF20-B293DCF70B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E261659-32CA-4B2A-BF20-B293DCF70B64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
