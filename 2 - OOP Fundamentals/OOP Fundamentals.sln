@@ -9,19 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Fields", "02 - Fields\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Properties", "03 - Properties\03 - Properties.csproj", "{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Object Initializer", "04 - Object Initializer\04 - Object Initializer.csproj", "{0ACCF647-7CDC-429F-9125-D0109A797D1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Constructor", "04 - Constructor\04 - Constructor.csproj", "{9A9D5B1C-C180-4899-A692-D44457716939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Constructor", "05 - Constructor\05 - Constructor.csproj", "{9A9D5B1C-C180-4899-A692-D44457716939}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Primary Constructor", "05 - Primary Constructor\05 - Primary Constructor.csproj", "{9C376810-65B3-46FC-9F24-3757B209C9CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Primary Constructor", "06 - Primary Constructor\06 - Primary Constructor.csproj", "{9C376810-65B3-46FC-9F24-3757B209C9CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Methods", "06 - Methods\06 - Methods.csproj", "{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Methods", "07 - Methods\07 - Methods.csproj", "{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Readonly vs Const", "07 - Readonly vs Const\07 - Readonly vs Const.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - Readonly vs Const", "08 - Readonly vs Const\08 - Readonly vs Const.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - Required", "08 - Required\08 - Required.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Required", "09 - Required\09 - Required.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Static vs Non-Static", "10 - Static vs Non-Static\10 - Static vs Non-Static.csproj", "{4563815E-ED92-4937-BA48-AD711D27AA34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Static vs Non-Static", "09 - Static vs Non-Static\09 - Static vs Non-Static.csproj", "{4563815E-ED92-4937-BA48-AD711D27AA34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0ACCF647-7CDC-429F-9125-D0109A797D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ACCF647-7CDC-429F-9125-D0109A797D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ACCF647-7CDC-429F-9125-D0109A797D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ACCF647-7CDC-429F-9125-D0109A797D1E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Release|Any CPU.ActiveCfg = Release|Any CPU

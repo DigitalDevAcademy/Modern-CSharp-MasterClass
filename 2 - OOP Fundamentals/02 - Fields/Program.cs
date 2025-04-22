@@ -1,4 +1,4 @@
-﻿// Instantiate frist Car object
+﻿// Instantiate frist Car object and initialize using object initializer
 Car car1 = new() 
 {
     make = "Toyota",
@@ -7,7 +7,7 @@ Car car1 = new()
 };
 Console.WriteLine($"Car1 make is {car1.make} and model is {car1.model}.");
 
-// Instantiate second Car object
+// Instantiate second Car object and initialize using object initializer
 Car car2 = new()
 {
     make = "Honda",
@@ -16,7 +16,7 @@ Car car2 = new()
 };
 Console.WriteLine($"Car2 make is {car2.make} and model is {car2.model}.");
 
-// Instantiate third Car object
+// Instantiate third Car object and initialize using object initializer
 Car car3 = new()
 {
     make = "Ford",
