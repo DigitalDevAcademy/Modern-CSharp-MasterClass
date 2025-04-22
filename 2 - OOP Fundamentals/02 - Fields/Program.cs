@@ -1,22 +1,28 @@
 ﻿// Instantiate frist Car object
-Car car1 = new();
-car1.make = "Toyota";
-car1.model = "Corolla";
-// car1.vin = "abc123"; // Cannot access vin, it is a private field
+Car car1 = new() 
+{
+    make = "Toyota",
+    model = "Corolla"
+    // vin = "abc123" // Cannot access vin, it is a private field
+};
 Console.WriteLine($"Car1 make is {car1.make} and model is {car1.model}.");
 
 // Instantiate second Car object
-Car car2 = new();
-car2.make = "Honda";
-car2.model = "Civic";
-// car2.vin = "abc456"; // Cannot access vin, it is a private field
+Car car2 = new()
+{
+    make = "Honda",
+    model = "Civic"
+    // vin = "abc456"; // Cannot access vin, it is a private field
+};
 Console.WriteLine($"Car2 make is {car2.make} and model is {car2.model}.");
 
 // Instantiate third Car object
-Car car3 = new();
-car3.make = "Ford";
-car3.model = "Mustang";
-// car3.vin = "abc789"; // Cannot access vin, it is a private field
+Car car3 = new()
+{
+    make = "Ford",
+    model = "Mustang"
+    // vin = "abc789"; // Cannot access vin, it is a private field
+};
 Console.WriteLine($"Car3 make is {car3.make} and model is {car3.model}.");
 
 public class Car
