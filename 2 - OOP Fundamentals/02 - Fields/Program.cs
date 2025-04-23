@@ -5,7 +5,7 @@ Car car1 = new()
     model = "Corolla"
     // vin = "abc123" // Cannot access vin, it is a private field
 };
-Console.WriteLine($"Car1 make is {car1.make} and model is {car1.model}.");
+Console.WriteLine($"Car1 make: {car1.make}, model: {car1.model}");
 
 // Instantiate second Car object and initialize using object initializer
 Car car2 = new()
@@ -14,16 +14,7 @@ Car car2 = new()
     model = "Civic"
     // vin = "abc456"; // Cannot access vin, it is a private field
 };
-Console.WriteLine($"Car2 make is {car2.make} and model is {car2.model}.");
-
-// Instantiate third Car object and initialize using object initializer
-Car car3 = new()
-{
-    make = "Ford",
-    model = "Mustang"
-    // vin = "abc789"; // Cannot access vin, it is a private field
-};
-Console.WriteLine($"Car3 make is {car3.make} and model is {car3.model}.");
+Console.WriteLine($"Car2 make: {car2.make}, model: {car2.model}");
 
 public class Car
 {
@@ -37,6 +28,6 @@ public class Car
     * in order to showcase how to write private fields in a class.
     */
     #pragma warning disable CS0414
-    private string vin = string.Empty; // Cannot access or modify a private field anywhere else except the class itself
+    private string _vin = string.Empty; // Cannot access or modify a private field anywhere else except the class itself
     #pragma warning restore CS0414
 }
