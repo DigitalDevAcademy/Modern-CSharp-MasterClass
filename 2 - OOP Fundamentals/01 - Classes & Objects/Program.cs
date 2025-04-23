@@ -4,11 +4,8 @@ Car car1 = new();
 // Car car1 = new Car();
 // var car1 = new Car();
 
-// You can instantiate many instances of a class
+// You can instantiate many instances of a class, I am just instantiating one more to keep things simple
 Car car2 = new();
-
-// Instantiate another instance from the same class to futher illustrate the above point
-Car car3 = new();
 
 // Create an empty class with public access modifier, no modifiers and no class members
 public class Car
