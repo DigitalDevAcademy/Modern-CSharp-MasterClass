@@ -1,26 +1,22 @@
-﻿// Instantiate frist Car object and initialize using object initializer
-Car car1 = new() 
+﻿// Instantiate frist Person object
+Person person1 = new() 
 {
-    make = "Toyota",
-    model = "Corolla"
-    // vin = "abc123" // Cannot access vin, it is a private field
+    name = "SomePerson1"
+    // _ssn = "abc123" // Cannot access _ssn, it is a private field
 };
-Console.WriteLine($"Car1 make: {car1.make}, model: {car1.model}");
+Console.WriteLine($"Person 1 name: {person1.name}");
 
-// Instantiate second Car object and initialize using object initializer
-Car car2 = new()
+// Instantiate second Person object
+Person person2 = new()
 {
-    make = "Honda",
-    model = "Civic"
-    // vin = "abc456"; // Cannot access vin, it is a private field
+    name = "SomePerson2",
+    // _ssn = "abc456"; // Cannot access _ssn, it is a private field
 };
-Console.WriteLine($"Car2 make: {car2.make}, model: {car2.model}");
+Console.WriteLine($"Person 2 name: {person2.name}");
 
-public class Car
+public class Person
 {
-    public string make = string.Empty;
-
-    public string model = string.Empty;
+    public string name = string.Empty;
 
     /*
     * Students please ignore this "pragma" line here and at the bottom of the file
@@ -28,6 +24,6 @@ public class Car
     * in order to showcase how to write private fields in a class.
     */
     #pragma warning disable CS0414
-    private string _vin = string.Empty; // Cannot access or modify a private field anywhere else except the class itself
+    private string _ssn = string.Empty; // Cannot access or modify a private field anywhere else except the class itself
     #pragma warning restore CS0414
 }
