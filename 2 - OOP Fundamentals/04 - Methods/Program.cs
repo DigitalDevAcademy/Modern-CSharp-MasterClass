@@ -1,57 +1,34 @@
-﻿Car myCar = new();
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Refuel(-100);
-myCar.Refuel(101);
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Drive();
-myCar.Refuel(100);
-myCar.Drive();
+﻿Bag bag = new() { Capacity = 20 };
+Console.WriteLine(bag.IsFull());
+bag.AddItems(10);
+Console.WriteLine(bag.IsFull());
+bag.AddItems(10);
+Console.WriteLine(bag.IsFull());
+bag.AddItems(1);
 
-public class Car
+public class Bag
 {
-    public int CurrentFuel { get; set; } = 100;
+    public int Capacity { get; init; } = 10;
 
-    // Void method does not return anything, also parameterless meaning it does not take in any parameters
-    public void Drive()
+    public int ItemCount { get; set; }
+
+    // Void method with one parameter
+    public void AddItems(int newItems)
     {
-        if (CurrentFuel > 0)
+        if (ItemCount + newItems > Capacity) 
         {
-            Console.WriteLine("Car is moving.");
-            CurrentFuel -= 25;
+            Console.WriteLine("Over capacity.");
+            // Return statement only used to exit the method back to the caller
+            return;
         }
-        else
-        {
-            Console.WriteLine("Car doesn't have enough fuel. Please refuel!");
-        }
+
+        ItemCount += newItems;
+        Console.WriteLine($"Item added. Total number of items are {ItemCount}.");
     }
 
-    // Method returning value of type bool and taking in one parameter of type int
-    public bool Refuel(int newFuel)
+    // Parameterless method returning a value of type bool
+    public bool IsFull()
     {
-        if (newFuel < 0)
-        {
-            // In real-life this would be an exception, but for now we are printing a message
-            Console.WriteLine("No fuel was added.");
-            return false;
-        }
-        
-        if (CurrentFuel + newFuel > 100)
-        {
-            // If the sum of incoming fuel and current fuel go above 100 we only keep 100 and discard the rest and print a message
-            CurrentFuel = 100;
-            Console.WriteLine("The fuel tank is over capacity.");
-            return true;
-        }
-        
-        // If we are within capacity then keep adding incoming fuel to our current fuel level
-        CurrentFuel += newFuel;
-        return true;
+        return ItemCount >= Capacity;
     }
 }
