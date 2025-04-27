@@ -1,12 +1,12 @@
-﻿Bag bag = new() { Capacity = 20 };
-Console.WriteLine(bag.IsFull());
-bag.AddItems(10);
-Console.WriteLine(bag.IsFull());
-bag.AddItems(10);
-Console.WriteLine(bag.IsFull());
-bag.AddItems(1);
+﻿Box box = new() { Capacity = 20 };
+Console.WriteLine(box.IsFull());
+box.AddItems(10);
+Console.WriteLine(box.IsFull());
+box.AddItems(10);
+Console.WriteLine(box.IsFull());
+box.AddItems(1);
 
-public class Bag
+public class Box
 {
     public int Capacity { get; init; } = 10;
 
