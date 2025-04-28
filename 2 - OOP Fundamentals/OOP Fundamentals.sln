@@ -13,15 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Methods", "04 - Method
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Constructor", "05 - Constructor\05 - Constructor.csproj", "{9A9D5B1C-C180-4899-A692-D44457716939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - Primary Constructor", "06 - Primary Constructor\06 - Primary Constructor.csproj", "{9C376810-65B3-46FC-9F24-3757B209C9CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - This Keyword", "06 - This Keyword\06 - This Keyword.csproj", "{0D7C96A6-FF9D-43DD-B9BF-D21BEA8AE8AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Expression-Bodied Members", "07 - Expression-Bodied Members\07 - Expression-Bodied Members.csproj", "{91F241E3-F59D-44BC-B969-36818F4B9FC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Primary Constructor", "07 - Primary Constructor\07 - Primary Constructor.csproj", "{9C376810-65B3-46FC-9F24-3757B209C9CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - Readonly vs Const", "08 - Readonly vs Const\08 - Readonly vs Const.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - Expression-Bodied Members", "08 - Expression-Bodied Members\08 - Expression-Bodied Members.csproj", "{91F241E3-F59D-44BC-B969-36818F4B9FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Required", "09 - Required\09 - Required.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Readonly vs Const", "09 - Readonly vs Const\09 - Readonly vs Const.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Static vs Non-Static", "10 - Static vs Non-Static\10 - Static vs Non-Static.csproj", "{4563815E-ED92-4937-BA48-AD711D27AA34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Required", "10 - Required\10 - Required.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Static vs Non-Static", "11 - Static vs Non-Static\11 - Static vs Non-Static.csproj", "{4563815E-ED92-4937-BA48-AD711D27AA34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8682CBEA-74C0-4B23-BBFF-13FA128A59E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A9D5B1C-C180-4899-A692-D44457716939}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,10 +55,6 @@ Global
 		{9C376810-65B3-46FC-9F24-3757B209C9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C376810-65B3-46FC-9F24-3757B209C9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C376810-65B3-46FC-9F24-3757B209C9CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1BFB88F-3051-4AE8-9555-AA0B26F513F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91F241E3-F59D-44BC-B969-36818F4B9FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91F241E3-F59D-44BC-B969-36818F4B9FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F241E3-F59D-44BC-B969-36818F4B9FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +71,10 @@ Global
 		{4563815E-ED92-4937-BA48-AD711D27AA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4563815E-ED92-4937-BA48-AD711D27AA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4563815E-ED92-4937-BA48-AD711D27AA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7C96A6-FF9D-43DD-B9BF-D21BEA8AE8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7C96A6-FF9D-43DD-B9BF-D21BEA8AE8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7C96A6-FF9D-43DD-B9BF-D21BEA8AE8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7C96A6-FF9D-43DD-B9BF-D21BEA8AE8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
