@@ -6,7 +6,7 @@ Console.WriteLine($"Robot Info: {robotTwo.Name}, {robotTwo.Map}");
 
 public class Robot(string name, string map)
 {
-    public Robot() : this("Unnamed Robot", "") { }
+    public Robot() : this("Default Robot", string.Empty) { }
     
     public string Name { get; init; } = name;
 
