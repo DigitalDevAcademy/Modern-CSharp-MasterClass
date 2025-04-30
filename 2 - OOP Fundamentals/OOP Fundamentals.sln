@@ -21,9 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - Expression-Bodied Memb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - Static vs Instance Members", "09 - Static vs Instance Members\09 - Static vs Instance Members.csproj", "{4563815E-ED92-4937-BA48-AD711D27AA34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Readonly vs Const", "10 - Readonly vs Const\10 - Readonly vs Const.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Readonly vs Const Fields", "10 - Readonly vs Const Fields\10 - Readonly vs Const Fields.csproj", "{B1D56D43-D7B6-49FF-A21A-CEA16CCF447B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Required", "11 - Required\11 - Required.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Required Modifier", "11 - Required Modifier\11 - Required Modifier.csproj", "{4D2B6840-DF5F-437A-8645-770FE1336874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
