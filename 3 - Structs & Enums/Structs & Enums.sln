@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,17 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Structs", "01 - Struct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Readonly Structs", "02 - Readonly Structs\02 - Readonly Structs.csproj", "{0F13C594-54DE-433F-8745-0903B73EA3C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Primitives As Structs", "03 - Primitives As Structs\03 - Primitives As Structs.csproj", "{29FF44B7-F667-4937-BFBE-FB6173C3D0A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - With Expression", "03 - With Expression\03 - With Expression.csproj", "{5F0362ED-9C81-436B-9303-6C834F8163FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Enums", "04 - Enums\04 - Enums.csproj", "{8F2644E2-ACA8-468B-97F8-78CE92117880}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Primitives As Structs", "04 - Primitives As Structs\04 - Primitives As Structs.csproj", "{29FF44B7-F667-4937-BFBE-FB6173C3D0A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Enums", "05 - Enums\05 - Enums.csproj", "{8F2644E2-ACA8-468B-97F8-78CE92117880}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A291F833-411E-406D-B98E-BC5C4F3B91AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -35,5 +35,12 @@ Global
 		{8F2644E2-ACA8-468B-97F8-78CE92117880}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F2644E2-ACA8-468B-97F8-78CE92117880}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F2644E2-ACA8-468B-97F8-78CE92117880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0362ED-9C81-436B-9303-6C834F8163FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0362ED-9C81-436B-9303-6C834F8163FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0362ED-9C81-436B-9303-6C834F8163FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0362ED-9C81-436B-9303-6C834F8163FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
