@@ -24,6 +24,7 @@ Please check below to see all of the latest concepts covered in the course (more
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Auto-default structs |
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Required modifier |
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Raw string literals |
+| ![C# 10.0](https://img.shields.io/badge/C%23-10.0-blue) | ![.NET 6](https://img.shields.io/badge/.NET-6.0-yellow) | With expression for structs |
 | ![C# 10.0](https://img.shields.io/badge/C%23-10.0-blue) | ![.NET 6](https://img.shields.io/badge/.NET-6.0-yellow) | Parameterless (default) constructor in a struct |
 | ![C# 10.0](https://img.shields.io/badge/C%23-10.0-blue) | ![.NET 6](https://img.shields.io/badge/.NET-6.0-yellow) | String interpolation memory efficiency & performance improvement |
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Top-level statements |
