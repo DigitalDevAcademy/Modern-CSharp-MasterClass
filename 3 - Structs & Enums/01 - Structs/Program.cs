@@ -5,13 +5,13 @@ point1.Y = 20;
 Console.WriteLine(point1.GetInfo());
 
 Point point2 = new(30, 30);
-Console.WriteLine(point1.GetInfo());
+Console.WriteLine(point2.GetInfo());
 
 Point point3 = new() { X = 40, Y = 40 };
-Console.WriteLine(point1.GetInfo());
+Console.WriteLine(point3.GetInfo());
 
 Point point4 = new(50);
-Console.WriteLine(point1.GetInfo());
+Console.WriteLine(point4.GetInfo());
 
 public struct Point
 {
