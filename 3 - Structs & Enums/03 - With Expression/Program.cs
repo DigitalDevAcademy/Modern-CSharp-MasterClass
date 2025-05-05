@@ -5,14 +5,8 @@ Console.WriteLine($"Point1 X: {point1.X}, Y: {point1.Y}.");
 Point point2 = point1 with { X = 20 };
 Console.WriteLine($"Point1 X: {point2.X}, Y: {point2.Y}.");
 
-public readonly struct Point
+public readonly struct Point(int x, int y)
 {
-    public int X { get; init; }
-    public int Y { get; init; }
-    
-    public Point(int x, int y)
-    {
-        X = x;
-        Y = y;
-    }
+    public int X { get; init; } = x;
+    public int Y { get; init; } = y;
 }
