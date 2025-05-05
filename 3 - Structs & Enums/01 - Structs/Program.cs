@@ -1,17 +1,17 @@
 ﻿Point point1 = new();
-Console.WriteLine($"Point1 X: {point1.X}, Y: {point1.Y}.");
+Console.WriteLine(point1.GetInfo());
 point1.X = 20;
 point1.Y = 20;
-Console.WriteLine($"Point1 X: {point1.X}, Y: {point1.Y}.");
+Console.WriteLine(point1.GetInfo());
 
 Point point2 = new(30, 30);
-Console.WriteLine($"Point2 X: {point2.X}, Y: {point2.Y}.");
+Console.WriteLine(point1.GetInfo());
 
 Point point3 = new() { X = 40, Y = 40 };
-Console.WriteLine($"Point2 X: {point3.X}, Y: {point3.Y}.");
+Console.WriteLine(point1.GetInfo());
 
 Point point4 = new(50);
-Console.WriteLine($"Point2 X: {point4.X}, Y: {point4.Y}.");
+Console.WriteLine(point1.GetInfo());
 
 public struct Point
 {
@@ -33,4 +33,6 @@ public struct Point
         X = x;
         Y = y;
     }
+
+    public string GetInfo() => $"X is {X}, Y is {Y}.";
 }
