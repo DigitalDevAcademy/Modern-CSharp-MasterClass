@@ -1,5 +1,5 @@
-﻿DynamicPoint dynamicPoint1 = new();
-Console.WriteLine(dynamicPoint1.GetInfo());
+﻿DynamicPoint dynamicPoint = new();
+Console.WriteLine(dynamicPoint.GetInfo());
 
 public readonly struct DynamicPoint
 {

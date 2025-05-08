@@ -1,5 +1,5 @@
-﻿Point point1 = new(10, 10);
-Console.WriteLine(point1.GetInfo());
+﻿Point point = new(10, 10);
+Console.WriteLine(point.GetInfo());
 // Cannot change immutable property values
 // point1.X = 20;
 // point1.Y = 20;

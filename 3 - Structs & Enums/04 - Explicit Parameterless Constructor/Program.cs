@@ -1,5 +1,5 @@
-﻿Point point1 = new();
-Console.WriteLine(point1.GetInfo());
+﻿Point point = new();
+Console.WriteLine(point.GetInfo());
 
 public readonly struct Point
 {
