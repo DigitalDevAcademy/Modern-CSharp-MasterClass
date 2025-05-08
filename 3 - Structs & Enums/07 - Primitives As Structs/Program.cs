@@ -5,11 +5,12 @@
 */
 #pragma warning disable CS0219
 
-System.Int32 totalProducts = 50; // int
-System.Int64 totalWebsiteVisits = 1000000000000; // long
-System.Single playerViewDistance = 1350.75f; // float
-System.Double calculationResult = 15009090.132453849519; // double
-System.Decimal accountBalance = 100500.1050m; // decimal
+/* 
+ * List on the lecture already covers commonly used primitives
+ * these are just to showcase them further and look at the implementation
+ * details to make sure they are structs 
+ */
+System.Int32 productCount = 100; // int
 System.Boolean isUserLoggedIn = true; // bool
 System.Char studentGrade = 'A'; // char
 
