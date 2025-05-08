@@ -1,12 +1,20 @@
 ﻿Point point1 = new(10, 10);
-Console.WriteLine($"Point1 X: {point1.X}, Y: {point1.Y}.");
+Console.WriteLine(point1.GetInfo());
 
-// With expression available for structs starting C# 10 .NET 6
+// Non-destructive mutation using with expression
 Point point2 = point1 with { X = 20 };
-Console.WriteLine($"Point1 X: {point2.X}, Y: {point2.Y}.");
+Console.WriteLine(point2.GetInfo());
 
-public readonly struct Point(int x, int y)
+public readonly struct Point
 {
-    public int X { get; init; } = x;
-    public int Y { get; init; } = y;
+    public int X { get; init; }
+    public int Y { get; init; }
+
+    public Point(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+
+    public string GetInfo() => $"X is {X}, Y is {Y}.";
 }
