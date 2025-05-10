@@ -1,6 +1,6 @@
 ﻿ProcessPayment(50, PaymentType.Crypto);
 
-// Provides us with compile-time safety and keeps code refactor-friendly
+// Provides type safety while keeping the code refactor-friendly
 void ProcessPayment(decimal amount, PaymentType paymentType)
 {
     switch(paymentType)
