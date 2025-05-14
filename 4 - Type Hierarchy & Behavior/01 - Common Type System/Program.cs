@@ -5,7 +5,7 @@ object person = new Person();
 object point = new Point();
 
 public class Person 
-{   
+{
 }
 
 public struct Point

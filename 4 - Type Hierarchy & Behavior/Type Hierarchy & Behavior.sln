@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - Common Type System", "01 - Common Type System\01 - Common Type System.csproj", "{2FBD031B-9561-4A3F-8A07-B7E181D28C58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Stack vs Heap", "02 - Stack vs Heap\02 - Stack vs Heap.csproj", "{3C0F5989-617B-47C0-BF56-48226DC2A80D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Value vs Reference Semantics", "02 - Value vs Reference Semantics\02 - Value vs Reference Semantics.csproj", "{3C0F5989-617B-47C0-BF56-48226DC2A80D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Out vs Ref vs In", "03 - Out vs Ref vs In\03 - Out vs Ref vs In.csproj", "{FD81B700-BAA1-4E21-B498-019A2BE8D7B9}"
 EndProject
