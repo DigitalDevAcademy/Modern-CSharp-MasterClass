@@ -1,49 +1,49 @@
 ﻿// Initializing a struct and a class with only one field
 // Value vs reference semantics - example 1
-UserStruct userStruct = new(1);
-UserClass userClass = new(1);
+UserStruct userStruct = new(30);
+UserClass userClass = new(30);
 
 UserStruct anotherUserStruct = userStruct; // Creates a copy
-anotherUserStruct.Id++;
+anotherUserStruct.Age++;
 
-Console.WriteLine(anotherUserStruct.Id);
-Console.WriteLine(userStruct.Id);
+Console.WriteLine(anotherUserStruct.Age);
+Console.WriteLine(userStruct.Age);
 
 UserClass anotherUserClass = userClass; // Creates a reference
-anotherUserClass.Id++;
+anotherUserClass.Age++;
 
-Console.WriteLine(anotherUserClass.Id);
-Console.WriteLine(userClass.Id);
+Console.WriteLine(anotherUserClass.Age);
+Console.WriteLine(userClass.Age);
 
 // Value vs reference semantics - example 2
-// UserStruct userStruct = new(1);
-// UserClass userClass = new(1);
+// UserStruct userStruct = new(30);
+// UserClass userClass = new(30);
 
 // // Printing both values before changing them
-// Console.WriteLine(userStruct.Id);
-// Console.WriteLine(userClass.Id);
+// Console.WriteLine(userStruct.Age);
+// Console.WriteLine(userClass.Age);
 
 // ChangeUserId(userStruct, userClass);
 
 // // Printing both values after changing them
-// Console.WriteLine(userStruct.Id);
-// Console.WriteLine(userClass.Id);
+// Console.WriteLine(userStruct.Age);
+// Console.WriteLine(userClass.Age);
 
 // // Modify both values to see the difference between stack vs heap
 // void ChangeUserId(UserStruct userStruct, UserClass userClass)
 // {
-//     userStruct.Id = 2;
-//     userClass.Id = 2;
+//     userStruct.Age = 35;
+//     userClass.Age = 35;
 // }
 
 // Struct is a value type
-struct UserStruct(int id)
+struct UserStruct(int age)
 {
-    public int Id { get; set; } = id;
+    public int Age { get; set; } = age;
 }
 
 // Class is a reference type
-class UserClass(int id)
+class UserClass(int age)
 {
-    public int Id { get; set; } = id;
+    public int Age { get; set; } = age;
 }
