@@ -23,14 +23,14 @@ Console.WriteLine(userClass.Age);
 // Console.WriteLine(userStruct.Age);
 // Console.WriteLine(userClass.Age);
 
-// ChangeUserId(userStruct, userClass);
+// ChangeUserAge(userStruct, userClass);
 
 // // Printing both values after changing them
 // Console.WriteLine(userStruct.Age);
 // Console.WriteLine(userClass.Age);
 
 // // Modify both values to see the difference between stack vs heap
-// void ChangeUserId(UserStruct userStruct, UserClass userClass)
+// void ChangeUserAge(UserStruct userStruct, UserClass userClass)
 // {
 //     userStruct.Age = 35;
 //     userClass.Age = 35;
