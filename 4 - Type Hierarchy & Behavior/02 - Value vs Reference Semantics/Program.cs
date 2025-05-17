@@ -1,4 +1,5 @@
 ﻿// Initializing a struct and a class with only one field
+// Value vs reference semantics - example 1
 UserStruct userStruct = new(30);
 UserClass userClass = new(30);
 
@@ -13,6 +14,27 @@ anotherUserClass.Age++;
 
 Console.WriteLine(anotherUserClass.Age);
 Console.WriteLine(userClass.Age);
+
+// Value vs reference semantics - example 2
+// UserStruct userStruct = new(30);
+// UserClass userClass = new(30);
+
+// // Printing both values before changing them
+// Console.WriteLine(userStruct.Age);
+// Console.WriteLine(userClass.Age);
+
+// ChangeUserAge(userStruct, userClass);
+
+// // Printing both values after changing them
+// Console.WriteLine(userStruct.Age);
+// Console.WriteLine(userClass.Age);
+
+// // Modify both values to see the difference between stack vs heap
+// void ChangeUserAge(UserStruct userStruct, UserClass userClass)
+// {
+//     userStruct.Age = 35;
+//     userClass.Age = 35;
+// }
 
 // Struct is a value type
 struct UserStruct(int age)
