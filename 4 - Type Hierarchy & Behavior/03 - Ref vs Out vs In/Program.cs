@@ -1,4 +1,6 @@
-﻿int firstNumber = 1;
+﻿using System.Security.Permissions;
+
+int firstNumber = 1;
 ChangeUsingRef(ref firstNumber);
 void ChangeUsingRef(ref int number) => number = 2;
 Console.WriteLine(firstNumber);
