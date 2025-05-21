@@ -37,13 +37,13 @@ Console.WriteLine(userClass.Age);
 // }
 
 // Struct is a value type
-struct UserStruct(int age)
+public struct UserStruct(int age)
 {
     public int Age { get; set; } = age;
 }
 
 // Class is a reference type
-class UserClass(int age)
+public class UserClass(int age)
 {
     public int Age { get; set; } = age;
 }

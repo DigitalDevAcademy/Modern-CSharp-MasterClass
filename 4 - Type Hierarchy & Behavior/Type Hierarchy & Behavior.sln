@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Value vs Reference Sem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Ref vs Out vs In", "03 - Ref vs Out vs In\03 - Ref vs Out vs In.csproj", "{FD81B700-BAA1-4E21-B498-019A2BE8D7B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Boxing & Unboxing", "04 - Boxing & Unboxing\04 - Boxing & Unboxing.csproj", "{CFBA7687-583D-4BE1-92A4-79F02A4CF871}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Boxing vs Unboxing", "04 - Boxing vs Unboxing\04 - Boxing vs Unboxing.csproj", "{CFBA7687-583D-4BE1-92A4-79F02A4CF871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
