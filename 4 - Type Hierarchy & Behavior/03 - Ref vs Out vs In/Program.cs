@@ -1,16 +1,36 @@
-﻿using System.Security.Permissions;
+﻿MutablePoint mutablePoint = new(1, 1);
+ChangePointWithRef(ref mutablePoint);
+void ChangePointWithRef(ref MutablePoint point)
+{
+    point.X = 2;
+    point.Y = 2;
+}
+Console.WriteLine($"{mutablePoint.X}, {mutablePoint.Y}");
 
-int firstNumber = 1;
-ChangeUsingRef(ref firstNumber);
-void ChangeUsingRef(ref int number) => number = 2;
-Console.WriteLine(firstNumber);
+/* 
+ * Starting with C# 7.0 you can declare out variables inline
+ * 
+ * TryParse is a great example of a built-in method which converts 
+ * the string representation of a number to its 32-bit signed integer equivalent 
+ */ 
+var isParsed = int.TryParse("10", out int result);
+Console.WriteLine($"{isParsed} - {result}");
 
-// Starting with C# 7.0 you can declare out variables inline
-ChangeUsingOut(out int secondNumber);
-void ChangeUsingOut(out int number) => number = 2;
-Console.WriteLine(secondNumber);
+// Starting with C# 7.2 you can declare method params as read-only
+var largeStruct = new LargeStruct(1000);
 
-int thirdNumber = 1;
-// Starting with C# 7.2 you can declare method params as read-only, recommended for value-types only
-AccessUsingIn(in thirdNumber);
-void AccessUsingIn(in int number) => Console.WriteLine(number); // number = 2; // <-- Results in compile-time error
+MethodRequiringGoodPerformance(in largeStruct);
+
+void MethodRequiringGoodPerformance(in LargeStruct largeStruct) => Console.WriteLine($"Procesing {largeStruct.SomeAmount}.");
+
+public readonly struct LargeStruct(int amount)
+{
+    public readonly int SomeAmount = amount;
+    public readonly long A, B, C, D, E = 100;
+}
+
+public struct MutablePoint(int x, int y)
+{
+    public int X { get; set; } = x;
+    public int Y { get; set; } = y;
+}
