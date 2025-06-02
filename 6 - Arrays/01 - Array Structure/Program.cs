@@ -20,7 +20,7 @@ Console.WriteLine(initClassArray[0].Value);
 Console.WriteLine(initClassArray[1].Value);
 Console.WriteLine(initClassArray[2].Value);
 
-public class Element(int element) { public int Value { get; init; } = element; }
+public class Element(int value) { public int Value { get; init; } = value; }
 
 
 
