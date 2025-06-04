@@ -1,33 +1,54 @@
-﻿int[] numbers = { 1, 1, 1, 2, 2 };
+﻿int[] numbers = [ 1, 2, 3, -4, 5 ]; // Sorted array in ascending order
 
 /* 
- * Recommended for iterating arrays
- * For loops are used to repeat actions a set number of times which fits well with arrays having a fixed size 
- */ 
-for (int i = 0; i < numbers.Length; i++)
-{
-    Console.Write(numbers[i]);
-}
-Console.WriteLine();
-
+ * O(n) time, O(1) space
+ * Since we have access to the index we can manipulate it and iterate backwards
+ */
 for (int i = numbers.Length - 1; i >= 0; i--)
 {
-    Console.Write(numbers[i]);
+    Console.Write($"[{numbers[i]}]");
 }
 Console.WriteLine();
 
-// While/Do...While loops are used to repeat actions an unknown number of times which does not fit well with arrays having a fixed size
-var j = 0;
-while (j < numbers.Length)
+/* 
+ * O(n) time, O(1) space
+ * We do not have access to the index, all we can do is iterate the array normally via cleaner syntax
+ */
+foreach (int number in numbers)
 {
-    Console.Write(numbers[j]);
-    j++;
+    Console.Write($"[{number}]");
 }
 Console.WriteLine();
 
-j = numbers.Length - 1;
-while (j >= 0)
+/* 
+ * O(n) time only because the array is sorted otherwise it would need to be sorted which would increase time complexity
+ * O(1) space
+ */
+var result = TwoSum(numbers, 8);
+Console.WriteLine(string.Join(",", result));
+
+int[] TwoSum(int[] array, int targetSum)
 {
-    Console.Write(numbers[j]);
-    j--;
+    var startIdx = 0;
+    var endIdx = numbers.Length - 1;
+
+    while (startIdx < endIdx)
+    {
+        var potentialMatch = array[startIdx] + array[endIdx];
+
+        if (potentialMatch == targetSum)
+        {
+            return [ array[startIdx], array[endIdx] ];
+        }
+        else if (potentialMatch < targetSum)
+        {
+            startIdx++;
+        }
+        else
+        {
+            endIdx--;
+        }
+    }
+
+    return [];
 }
