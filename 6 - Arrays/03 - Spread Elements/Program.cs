@@ -1,11 +1,11 @@
-﻿int[] q1Sales = [150, 200, 359];
-int[] q2Sales = [420, 120, 400, 550, 700];
-int[] q3Sales = [550, 700, 800, 1000];
-int[] q4Sales = [1200, 5000, 6500, 8100, 10525];
-int[] allSales = CombineSalesAndBonuses(q1Sales, q2Sales, q3Sales, q4Sales);
+﻿decimal[] q1Sales = [123.45m, 102.30m];
+decimal[] q2Sales = [89.99m, 76.50m, 98.75m, 110.00m];
+decimal[] q3Sales = [105.60m, 99.99m, 92.45m];
+decimal[] q4Sales = [67.89m, 80.00m, 115.25m, 108.40m, 120.00m];
+decimal[] allSales = CombineSalesAndBonuses(q1Sales, q2Sales, q3Sales, q4Sales);
 
 Console.WriteLine(string.Join(",", allSales));
 
 // Time and space O(n + m + k + l)
-int[] CombineSalesAndBonuses(int[] q1Sales, int[] q2Sales, int[] q3Sales, int[] q4Sales)
-    => [.. q1Sales, 1000, .. q2Sales, 2500, .. q3Sales, 4000, .. q4Sales, 5500];
+decimal[] CombineSalesAndBonuses(decimal[] q1Sales, decimal[] q2Sales, decimal[] q3Sales, decimal[] q4Sales)
+    => [.. q1Sales, 1000m, .. q2Sales, 2500m, .. q3Sales, 4000m, .. q4Sales, 5500m];
