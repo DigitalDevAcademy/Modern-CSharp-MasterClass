@@ -25,4 +25,3 @@ Console.WriteLine(reveresed);
 Array.Fill(numbers, 0);
 var refilled = string.Join(", ", numbers);
 Console.WriteLine(refilled);
-
