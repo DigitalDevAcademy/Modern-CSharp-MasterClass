@@ -1,8 +1,4 @@
-﻿/* 
- * int, string, custom class Person, custom struct Point all implicitly derive from System.Object
- * which is why we are able to upcast from our types to System.Object
- */
-object number = 10;
+﻿object number = 10;
 object text = "Hello World";
 object person = new Person("John", "Doe");
 object point = new Point(10, 10);
@@ -25,4 +21,6 @@ public struct Point(int x, int y)
 {
     public int X { get; init; } = x;
     public int Y { get; init; } = y;
+
+    public override string ToString() => $"X {X} and Y {Y}.";
 }
