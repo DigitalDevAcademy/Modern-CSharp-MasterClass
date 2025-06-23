@@ -5,7 +5,7 @@ Console.WriteLine(someClass.someProperty);
 Console.WriteLine(someClass.someReadOnlyProperty);
 Console.WriteLine(someClass.someMethod("New Param Value"));
 
-public class SomeClass
+class SomeClass
 {
     public SomeClass() => someProperty = "Default Value";
     

@@ -4,7 +4,7 @@ robotOne.PrintRobotInfo();
 Robot robotTwo = new("New Robot", "New Map");
 robotTwo.PrintRobotInfo();
 
-public class Robot(string name, string map)
+class Robot(string name, string map)
 {
     public Robot() : this("Default Robot", string.Empty) { }
     

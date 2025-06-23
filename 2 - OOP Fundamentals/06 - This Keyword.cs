@@ -9,7 +9,7 @@ Console.WriteLine($"Manager Info: {manager.FullName}, {manager.Age}");
 manager = new("John Doe", 40);
 Console.WriteLine($"Manager Info: {manager.FullName}, {manager.Age}");
 
-public class Manager
+class Manager
 {
     public string FullName { get; set; }
 

@@ -4,7 +4,7 @@ Console.WriteLine(productOne.GetInfo());
 Product productTwo = new() { Name = "Battery Pack", Price = 15.99m };
 Console.WriteLine(productTwo.GetInfo());
 
-public class Product
+class Product
 {
     // Object initializer is required to set this property
     public required string Name { get; init; }

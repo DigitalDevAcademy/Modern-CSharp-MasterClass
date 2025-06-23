@@ -8,7 +8,7 @@ someClass.PrintLocalConstant();
 Console.WriteLine($"Static Readonly Field Value: {SomeClass.someUniqueId}");
 Console.WriteLine($"Const Field Value: {SomeClass.someConstant}");
 
-public class SomeClass
+class SomeClass
 {
     // Declaring a readonly field - can hold any type and be assigned directly or inside constructor
      public readonly SomeDependency dependency;
@@ -39,7 +39,7 @@ public class SomeClass
      }    
 }
 
-public class SomeDependency
+class SomeDependency
 {
     public void DoWork() => Console.WriteLine("Work completed.");
 }

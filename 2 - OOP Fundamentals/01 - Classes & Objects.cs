@@ -7,8 +7,8 @@ Employee employee1 = new();
 // You can instantiate many instances of a class, I am just instantiating one more to keep things simple
 Employee employee2 = new();
 
-// Create an empty class with public access modifier, no modifiers and no class members
-public class Employee
+// Create an empty class with default access modifier, no modifiers and no class members
+class Employee
 {
     // Class body
 }

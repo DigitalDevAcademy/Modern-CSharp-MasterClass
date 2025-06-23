@@ -4,7 +4,7 @@ Console.WriteLine($"Robot Info: {robotOne.Name}, {robotOne.Map}");
 Robot robotTwo = new("New Robot", "New Map");
 Console.WriteLine($"Robot Info: {robotTwo.Name}, {robotTwo.Map}");
 
-public class Robot
+class Robot
 {
     public string Name { get; init; }
 

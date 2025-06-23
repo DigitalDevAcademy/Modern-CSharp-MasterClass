@@ -14,7 +14,7 @@ Person person2 = new()
 };
 Console.WriteLine($"Person 2 name: {person2.name}");
 
-public class Person
+class Person
 {
     public string name = string.Empty;
 

@@ -5,7 +5,7 @@ AdditionHelper.Add(10);
 Console.WriteLine(AdditionHelper.Result);
 
 // Static class cannot have any instance members only static members
-public static class AdditionHelper
+static class AdditionHelper
 {
     // We can have static fields and properties, but I am only using a property to keep the example concise
     public static int Result { get; set; }

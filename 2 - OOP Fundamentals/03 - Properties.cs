@@ -14,7 +14,7 @@ Console.WriteLine(bus.Capacity);
 // bus.Manufacturer = "Another Bus Company"; // Cannot modify Manufacturer because it is a read-only property
 Console.WriteLine(bus.Manufacturer);
 
-public class Bus
+class Bus
 {
     // Setting a default for the backing field
     private string _name = "Default Bus"; 

@@ -6,7 +6,7 @@ box.AddItems(10);
 Console.WriteLine(box.IsFull());
 box.AddItems(1);
 
-public class Box
+class Box
 {
     public int Capacity { get; init; } = 10;
 
