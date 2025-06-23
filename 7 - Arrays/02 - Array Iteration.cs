@@ -1,32 +1,42 @@
 ﻿int[] numbers = [ 1, 2, 3, -4, 5 ]; // Sorted array in ascending order
 
+SimpleIteration1(numbers);
+
+SimpleIteration2(numbers);
+
+var result = TwoSum(numbers, 8);
+Console.WriteLine(string.Join(",", result));
+
 /* 
  * O(n) time, O(1) space
  * Since we have access to the index we can manipulate it and iterate backwards
  */
-for (int i = numbers.Length - 1; i >= 0; i--)
+void SimpleIteration1(int[] array)
 {
-    Console.Write($"[{numbers[i]}]");
+    for (int i = array.Length - 1; i >= 0; i--)
+    {
+        Console.Write($"[{array[i]}]");
+    }
+    Console.WriteLine();
 }
-Console.WriteLine();
 
 /* 
  * O(n) time, O(1) space
  * We do not have access to the index, all we can do is iterate the array normally via cleaner syntax
  */
-foreach (int number in numbers)
+void SimpleIteration2(int[] array)
 {
-    Console.Write($"[{number}]");
+    foreach (int item in array)
+    {
+        Console.Write($"[{item}]");
+    }
+    Console.WriteLine();
 }
-Console.WriteLine();
 
 /* 
  * O(n) time only because the array is sorted otherwise it would need to be sorted which would increase time complexity
  * O(1) space
  */
-var result = TwoSum(numbers, 8);
-Console.WriteLine(string.Join(",", result));
-
 int[] TwoSum(int[] array, int targetSum)
 {
     var startIdx = 0;

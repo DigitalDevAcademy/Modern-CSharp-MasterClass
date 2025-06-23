@@ -15,7 +15,7 @@ Console.WriteLine(point2.GetInfo());
 Point point3 = new() { X = 30, Y = 30 };
 Console.WriteLine(point3.GetInfo());
 
-public struct Point
+struct Point
 {
     public int X { get; set; }
     public int Y { get; set; }

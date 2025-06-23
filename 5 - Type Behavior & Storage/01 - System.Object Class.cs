@@ -8,7 +8,7 @@ Console.WriteLine(text);
 Console.WriteLine(person);
 Console.WriteLine(point);
 
-public class Person(string firstName, string lastName)
+class Person(string firstName, string lastName)
 {
     public string FirstName { get; init; } = firstName;
 
@@ -17,7 +17,7 @@ public class Person(string firstName, string lastName)
     public override string ToString() => $"FirstName {FirstName} and LastName {LastName}.";
 }
 
-public struct Point(int x, int y)
+struct Point(int x, int y)
 {
     public int X { get; init; } = x;
     public int Y { get; init; } = y;

@@ -5,7 +5,7 @@ Console.WriteLine(point1.GetInfo());
 Point point2 = point1 with { X = 20 };
 Console.WriteLine(point2.GetInfo());
 
-public readonly struct Point
+readonly struct Point
 {
     public int X { get; init; }
     public int Y { get; init; }

@@ -1,7 +1,7 @@
 ﻿Point point = new();
 Console.WriteLine(point.GetInfo());
 
-public readonly struct Point
+readonly struct Point
 {
     public int X { get; init; }
     public int Y { get; init; }

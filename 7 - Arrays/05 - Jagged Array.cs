@@ -5,17 +5,22 @@ int[][] allClassGrades = [
     [57, 60, 85, 90]
 ];
 
+DisplayClassGrades(allClassGrades);
+
 /* 
  * O(n * m) time, O(1) space
  * n is the number of arrays within the jagged array and m is the length of each array
  * As mentioned we estimate the worse case where all array lengths are equal
  */
-for (int classIdx = 0; classIdx < allClassGrades.Length; classIdx++)
+void DisplayClassGrades(int[][] classGrades)
 {
-    Console.WriteLine($"Class {classIdx + 1}");
-    foreach (var studentGrade in allClassGrades[classIdx])
+    for (int classIdx = 0; classIdx < classGrades.Length; classIdx++)
     {
-        Console.Write($"[{studentGrade}]");
+        Console.WriteLine($"Class {classIdx + 1}");
+        foreach (var studentGrade in classGrades[classIdx])
+        {
+            Console.Write($"[{studentGrade}]");
+        }
+        Console.WriteLine();
     }
-    Console.WriteLine();
 }

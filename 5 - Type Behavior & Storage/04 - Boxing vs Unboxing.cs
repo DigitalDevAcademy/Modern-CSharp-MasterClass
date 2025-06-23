@@ -7,7 +7,7 @@ IPrintable printableBoxedPoint = point; // Boxing
 Point printableUnboxedPoint = (Point)printableBoxedPoint; // Unboxing
 printableUnboxedPoint.Print();
 
-public readonly struct Point(int x, int y) : IPrintable
+readonly struct Point(int x, int y) : IPrintable
 {
     public int X { get; init; } = x;
 
@@ -16,7 +16,7 @@ public readonly struct Point(int x, int y) : IPrintable
     public void Print() => Console.WriteLine($"Printing point ({X}, {Y}).");
 }
 
-public interface IPrintable
+interface IPrintable
 {
     void Print();
 }
