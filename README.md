@@ -21,6 +21,7 @@ Please check below to see all of the latest concepts covered in the course (more
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Collection expression |
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Spread operator |
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Primary constructor |
+| ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | File access modifier |
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Auto-default structs |
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Required modifier |
 | ![C# 11.0](https://img.shields.io/badge/C%23-11.0-blue) | ![.NET 7](https://img.shields.io/badge/.NET-7.0-yellow) | Raw string literals |
