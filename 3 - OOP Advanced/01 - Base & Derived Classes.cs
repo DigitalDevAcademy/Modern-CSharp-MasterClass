@@ -1,18 +1,11 @@
-SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
-SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
-
-// You cannot access derived class members from the base class
-// Console.WriteLine(schoolMember1.GPA); 
-// Console.WriteLine(schoolMember2.Department);
-
-Student student = (Student)schoolMember1;
-Teacher teacher = (Teacher)schoolMember2;
+Student student = new Student("John", "Doe", 3.5m);
+Teacher teacher = new Teacher("Sarah", "Doe", "Computer Science");
 
 Console.WriteLine(student.GPA);
 Console.WriteLine(teacher.Department);
 
 Console.WriteLine($"Before: {teacher.FirstName} {teacher.LastName}");
-teacher.UpdateInfo("Sophia", "Doe"); // We can access base members from a derived class
+teacher.UpdateInfo("Sophia", "Doe");
 // student.UpdateInfo("Mark", "Doe");
 Console.WriteLine($"After: {teacher.FirstName} {teacher.LastName}");
 
