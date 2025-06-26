@@ -16,9 +16,9 @@ Console.WriteLine($"Teacher: {teacher.FirstName} {teacher.LastName}");
 
 class SchoolMember
 {
-    public string FirstName { get; private set; }
+    public string FirstName { get; init; }
 
-    public string LastName { get; private set; }
+    public string LastName { get; init; }
 
     public SchoolMember(string make, string model)
     {
@@ -29,7 +29,7 @@ class SchoolMember
 
 class Student : SchoolMember
 {
-    public decimal GPA { get; private set; }
+    public decimal GPA { get; init; }
 
     public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
     {
@@ -39,7 +39,7 @@ class Student : SchoolMember
 
 class Teacher : SchoolMember
 {
-    public string Department { get; private set; }
+    public string Department { get; init; }
 
     public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
     {

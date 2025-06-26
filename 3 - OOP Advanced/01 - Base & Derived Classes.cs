@@ -9,14 +9,9 @@ teacher.UpdateInfo("Sophia", "Doe");
 // student.UpdateInfo("Mark", "Doe");
 Console.WriteLine($"After: {teacher.FirstName} {teacher.LastName}");
 
-student.UpdateGPA(-1);
-student.UpdateGPA(5);
-Console.WriteLine(student.GPA);
 student.UpdateGPA(4);
 Console.WriteLine(student.GPA);
 
-teacher.UpdateDepartment(string.Empty);
-Console.WriteLine(teacher.Department);
 teacher.UpdateDepartment("Biology");
 Console.WriteLine(teacher.Department);
 
@@ -34,6 +29,13 @@ class SchoolMember
 
     public void UpdateInfo(string firstName, string lastName)
     {
+        if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
+        {
+            // In real-life you could return an error result or throw an exception and/or log it as well
+            Console.WriteLine("Invlaid firstname and/or lastname!");
+            return;
+        }
+
         FirstName = firstName;
         LastName = lastName;
     }
