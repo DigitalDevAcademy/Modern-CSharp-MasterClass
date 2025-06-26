@@ -9,6 +9,7 @@ SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 // Downcasting
 Student student = (Student)schoolMember1;
 Teacher teacher = (Teacher)schoolMember2;
+// Teacher teacher = (Teacher)schoolMember1; // Will fail - Unable to cast object of type 'Student' to type 'Teacher'
 
 // You can access base class members from the derived class
 Console.WriteLine($"Student: {student.FirstName} {student.LastName}");
