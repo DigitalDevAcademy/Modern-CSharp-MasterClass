@@ -1,14 +1,14 @@
 Student student = new Student("John", "Doe");
 
-var request1 = student.Register(1);
-var request2 = student.Register("ABC123");
-var request3 = student.Register(1, "I don't have all prerequisites, but comfortable with the curriculum");
-var request4 = student.Register("CompSci101", 10);
+var registration1 = student.Register(1);
+var registration2 = student.Register("ABC123");
+var registration3 = student.Register(1, "I don't have all prerequisites, but comfortable with the curriculum");
+var registration4 = student.Register("CompSci101", 10);
 
-Console.WriteLine(request1);
-Console.WriteLine(request2);
-Console.WriteLine(request3);
-Console.WriteLine(request4);
+Console.WriteLine(registration1);
+Console.WriteLine(registration2);
+Console.WriteLine(registration3);
+Console.WriteLine(registration4);
 
 class Student(string firstName, string lastName)
 {
