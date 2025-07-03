@@ -32,6 +32,7 @@ Please check below to see all of the latest concepts covered in the course (more
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Top-level statements |
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Target-typed new expression |
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Init only setters |
+| ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Default interface members |
 | ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Verbatim string literal improvement |
 | ![C# 7.2](https://img.shields.io/badge/C%23-7.2-blue) | ![.NET Core 2.1](https://img.shields.io/badge/.NET%20Core-2.1-yellow) ![.NET Framework 4.7.2](https://img.shields.io/badge/.NET%20Framework-4.7.2-yellow) | In parameters |
 | ![C# 7.2](https://img.shields.io/badge/C%23-7.2-blue) | ![.NET Core 2.1](https://img.shields.io/badge/.NET%20Core-2.1-yellow) ![.NET Framework 4.7.2](https://img.shields.io/badge/.NET%20Framework-4.7.2-yellow) | Readonly structs |
