@@ -6,11 +6,11 @@ ProcessPayments(payableWorker1);
 ProcessPayments(payableWorker2);
 ProcessPayments(payableWorker3);
 
-void ProcessPayments(IPayable payableSchoolMember) => payableSchoolMember.ReceivePayment();
+void ProcessPayments(IPayable payableSchoolMember) => payableSchoolMember.RequestPayment();
 
-interface IPayable
+public interface IPayable
 {
-    void ReceivePayment();
+    void RequestPayment();
 }
 
 abstract class SchoolMember(string firstName, string lastName)
@@ -33,7 +33,7 @@ class Teacher(string firstName, string lastName, string department) : SchoolMemb
 {
     public string Department { get; init; } = department;
 
-    public void ReceivePayment() => Console.WriteLine("Teacher has received payment.");
+    public void RequestPayment() => Console.WriteLine("Teacher has received payment.");
 
     public override void Participate() => Console.WriteLine("Assigning homework and providing notes.");
 }
@@ -49,12 +49,12 @@ class Photographer(string company) : ExternalServiceProvider(company), IPayable
 {
     public override void ProvideService() => Console.WriteLine("Taking photoes.");
 
-    public void ReceivePayment() => Console.WriteLine("Photographer has received payment.");
+    public void RequestPayment() => Console.WriteLine("Photographer has received payment.");
 }
 
 class Electrician(string company) : ExternalServiceProvider(company), IPayable
 {
     public override void ProvideService() => Console.WriteLine("Fixing electricity.");
 
-    public void ReceivePayment() => Console.WriteLine("Electrician has received payment.");
+    public void RequestPayment() => Console.WriteLine("Electrician has received payment.");
 }
