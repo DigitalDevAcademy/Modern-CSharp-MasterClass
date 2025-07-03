@@ -21,10 +21,10 @@ class SchoolMember
 
     public string LastName { get; init; }
 
-    public SchoolMember(string make, string model)
+    public SchoolMember(string firstName, string lastName)
     {
-        FirstName = make;
-        LastName = model;
+        FirstName = firstName;
+        LastName = lastName;
     }
 }
 

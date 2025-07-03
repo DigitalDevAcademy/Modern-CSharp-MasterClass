@@ -18,10 +18,10 @@ abstract class SchoolMember
 
     public string LastName { get; init; }
 
-    public SchoolMember(string make, string model)
+    public SchoolMember(string firstName, string lastName)
     {
-        FirstName = make;
-        LastName = model;
+        FirstName = firstName;
+        LastName = lastName;
     }
 
     // Example of abstraction - we just know that a school member (teacher or student) participates but don't know how
