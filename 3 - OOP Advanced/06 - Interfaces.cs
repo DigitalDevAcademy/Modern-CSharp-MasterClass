@@ -1,5 +1,5 @@
 IPayable payableWorker1 = new Teacher("Sarah", "Doe", "Computer Science");
-IPayable payableWorker2 = new Photographer("Some Example Electrics LLC");
+IPayable payableWorker2 = new Photographer("Some Example Photography LLC");
 IPayable payableWorker3 = new Electrician("Some Example Electrician LLC");
 
 ProcessPayments(payableWorker1);
@@ -14,13 +14,13 @@ public interface IPayable
 }
 
 abstract class SchoolMember(string firstName, string lastName)
-    {
-        public string FirstName { get; init; } = firstName;
+{
+    public string FirstName { get; init; } = firstName;
 
-        public string LastName { get; init; } = lastName;
+    public string LastName { get; init; } = lastName;
 
-        public abstract void Participate();
-    }
+    public abstract void Participate();
+}
 
 class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
 {
