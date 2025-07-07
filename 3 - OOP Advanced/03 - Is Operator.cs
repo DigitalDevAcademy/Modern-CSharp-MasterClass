@@ -1,27 +1,24 @@
 SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
 SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 
-DisplaySchoolMemberInfo(schoolMember1);
-DisplaySchoolMemberInfo(schoolMember2);
+RequestApproveExtension(schoolMember1);
+RequestApproveExtension(schoolMember2);
 
-void DisplaySchoolMemberInfo(SchoolMember schoolMember)
+void RequestApproveExtension(SchoolMember schoolMember)
 {
-
     if (schoolMember is Student s)
     {
-        // Student s = (Student)schoolMember;
         Console.WriteLine($"{s.FirstName} {s.LastName} has a GPA of {s.GPA}");
         s.RequestExtension();
     }
     else if (schoolMember is Teacher t)
     {
-        // Teacher t = (Teacher)schoolMember;
         Console.WriteLine($"{t.FirstName} {t.LastName} works in the {t.Department} department");
         t.ApproveExtension();
     }
 }
 
-abstract class SchoolMember
+class SchoolMember
 {
     public string FirstName { get; init; }
 
