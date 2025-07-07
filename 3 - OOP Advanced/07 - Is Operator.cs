@@ -18,7 +18,7 @@ void RequestApproveExtension(SchoolMember schoolMember)
     }
 }
 
-class SchoolMember
+abstract class SchoolMember
 {
     public string FirstName { get; init; }
 
