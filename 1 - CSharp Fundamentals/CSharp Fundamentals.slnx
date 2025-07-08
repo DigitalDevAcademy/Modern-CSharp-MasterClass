@@ -1,0 +1,14 @@
+<Solution>
+  <Project Path="01 - Variables/01 - Variables.csproj" />
+  <Project Path="02 - System.Console Class/02 - System.Console Class.csproj" />
+  <Project Path="03 - Expressions/03 - Expressions.csproj" />
+  <Project Path="04 - Order Of Evaluations/04 - Order Of Evaluations.csproj" />
+  <Project Path="05 - Ternary Conditional Operator/05 - Ternary Conditional Operator.csproj" />
+  <Project Path="06 - If Statement/06 - If Statement.csproj" />
+  <Project Path="07 - Switch Statement/07 - Switch Statement.csproj" />
+  <Project Path="08 - For Loop/08 - For Loop.csproj" />
+  <Project Path="09 - While Loop/09 - While Loop.csproj" />
+  <Project Path="10 - Do While Loop/10 - Do While Loop.csproj" />
+  <Project Path="11 - Break/11 - Break.csproj" />
+  <Project Path="12 - Continue/12 - Continue.csproj" />
+</Solution>
