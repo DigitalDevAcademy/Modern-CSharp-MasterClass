@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="01 - Structs/01 - Structs.csproj" />
+  <Project Path="02 - Readonly Structs/02 - Readonly Structs.csproj" />
+  <Project Path="03 - With Expression/03 - With Expression.csproj" />
+  <Project Path="04 - Explicit Parameterless Constructor/04 - Explicit Parameterless Constructor.csproj" />
+  <Project Path="05 - Auto-Default Structs/05 - Auto-Default Structs.csproj" />
+  <Project Path="06 - Primary Constructor/06 - Primary Constructor.csproj" />
+  <Project Path="07 - Primitives As Structs/07 - Primitives As Structs.csproj" />
+  <Project Path="08 - Enums/08 - Enums.csproj" />
+</Solution>
