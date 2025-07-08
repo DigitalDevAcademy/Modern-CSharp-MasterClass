@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="01 - System.Object Class/01 - System.Object Class.csproj" />
+  <Project Path="02 - Value vs Reference Semantics/02 - Value vs Reference Semantics.csproj" />
+  <Project Path="03 - Ref vs Out vs In Modifiers/03 - Ref vs Out vs In Modifiers.csproj" />
+  <Project Path="04 - Boxing vs Unboxing/04 - Boxing vs Unboxing.csproj" />
+</Solution>

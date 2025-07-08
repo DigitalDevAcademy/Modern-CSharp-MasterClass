@@ -20,5 +20,3 @@ interface IPrintable
 {
     void Print();
 }
-
-
