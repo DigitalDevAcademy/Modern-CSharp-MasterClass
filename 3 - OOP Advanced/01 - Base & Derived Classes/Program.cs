@@ -1,4 +1,4 @@
-Student student = new Student("John", "Doe", 3.5m);
+﻿Student student = new Student("John", "Doe", 3.5m);
 Teacher teacher = new Teacher("Sarah", "Doe", "Computer Science");
 
 Console.WriteLine(student.GPA);

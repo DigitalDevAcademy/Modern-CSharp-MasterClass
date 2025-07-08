@@ -1,4 +1,4 @@
-SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
+﻿SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
 SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 // Cannot instantiate an abstract class
 // SchoolMember schoolMember = new SchoolMember("SomeFirstName", "SomeLastName");

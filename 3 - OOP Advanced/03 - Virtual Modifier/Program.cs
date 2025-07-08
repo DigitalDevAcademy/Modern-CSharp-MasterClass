@@ -1,24 +1,15 @@
-SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
+﻿SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
 SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 
-RequestApproveExtension(schoolMember1);
-RequestApproveExtension(schoolMember2);
+DisplaySchoolMemberInfo(schoolMember1);
+DisplaySchoolMemberInfo(schoolMember2);
 
-void RequestApproveExtension(SchoolMember schoolMember)
+void DisplaySchoolMemberInfo(SchoolMember schoolMember)
 {
-    if (schoolMember is Student s)
-    {
-        Console.WriteLine($"{s.FirstName} {s.LastName} has a GPA of {s.GPA}");
-        s.RequestExtension();
-    }
-    else if (schoolMember is Teacher t)
-    {
-        Console.WriteLine($"{t.FirstName} {t.LastName} works in the {t.Department} department");
-        t.ApproveExtension();
-    }
+    Console.WriteLine(schoolMember.GetInfo());
 }
 
-abstract class SchoolMember
+class SchoolMember
 {
     public string FirstName { get; init; }
 
@@ -29,6 +20,8 @@ abstract class SchoolMember
         FirstName = firstName;
         LastName = lastName;
     }
+
+    public virtual string GetInfo() => $"{FirstName} {LastName}";
 }
 
 class Student : SchoolMember
@@ -40,7 +33,7 @@ class Student : SchoolMember
         this.GPA = GPA;
     }
 
-    public void RequestExtension() => Console.WriteLine("Requesting extension");
+    public override string GetInfo() => $"{base.GetInfo()} {GPA}";
 }
 
 class Teacher : SchoolMember
@@ -52,5 +45,5 @@ class Teacher : SchoolMember
         Department = department;
     }
 
-    public void ApproveExtension() => Console.WriteLine("Extension approved");
+    public override string GetInfo() => $"{base.GetInfo()} {Department}";
 }

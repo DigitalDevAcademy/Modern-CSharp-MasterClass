@@ -1,4 +1,4 @@
-IPayable payableWorker1 = new Teacher("Sarah", "Doe", "Computer Science");
+﻿IPayable payableWorker1 = new Teacher("Sarah", "Doe", "Computer Science");
 IPayable payableWorker2 = new Photographer("Some Example Photography LLC");
 IPayable payableWorker3 = new Electrician("Some Example Electrician LLC");
 

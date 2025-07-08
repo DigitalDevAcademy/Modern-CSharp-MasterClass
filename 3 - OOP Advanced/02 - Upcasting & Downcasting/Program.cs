@@ -1,4 +1,4 @@
-// Upcasting
+﻿// Upcasting
 SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
 SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 

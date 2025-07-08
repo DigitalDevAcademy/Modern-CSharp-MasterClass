@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="01 - Base &amp; Derived Classes/01 - Base &amp; Derived Classes.csproj" />
+  <Project Path="02 - Upcasting &amp; Downcasting/02 - Upcasting &amp; Downcasting.csproj" />
+  <Project Path="03 - Virtual Modifier/03 - Virtual Modifier.csproj" />
+  <Project Path="04 - Abstract Modifier/04 - Abstract Modifier.csproj" />
+  <Project Path="05 - Method Overloading/05 - Method Overloading.csproj" />
+  <Project Path="06 - Interfaces/06 - Interfaces.csproj" />
+  <Project Path="07 - Is Operator/07 - Is Operator.csproj" />
+  <Project Path="08 - Sealed Modifier/08 - Sealed Modifier.csproj" />
+  <Project Path="09 - Static vs Instance Members/09 - Static vs Instance Members.csproj" />
+  <Project Path="10 - Readonly vs Const Fields/10 - Readonly vs Const Fields.csproj" />
+</Solution>
