@@ -1,4 +1,4 @@
-int[] numbers = [10, 10, 2, 2, 30, 30, 4, 4, 50, 50];
+﻿int[] numbers = [10, 10, 2, 2, 30, 30, 4, 4, 50, 50];
 
 // O(n) time, O(1) space
 var indexNotFound = Array.IndexOf(numbers, 100);

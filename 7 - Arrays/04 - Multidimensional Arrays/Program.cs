@@ -1,4 +1,4 @@
-char[,] treasureMap = new char[7, 5]
+﻿char[,] treasureMap = new char[7, 5]
 {
     { '*', '*', ' ', 'X', 'X'},
     { '*', '*', ' ', ' ', ' '},
