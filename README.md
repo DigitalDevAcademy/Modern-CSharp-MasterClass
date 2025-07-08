@@ -8,11 +8,11 @@ We have spent immense amount of time organizing the course to make sure it is in
 
 ## Comprehensive
 
-The challenge here is to keep information complete yet not overwhelming. Our approach is to remove concepts not commonly used by professional .NET developers - ones which are used are covered fully.
+The challenge here is to keep information complete yet not overwhelming. Our approach is to focus on fully covering concepts widely-used by professional .NET developers on daily basis, while skipping those which are not.
 
 ## Engaging
 
-Keeping theory to the minimum, providing clear visual examples with live coding challenges will keep things fun throughout the course.
+Keeping theory to the minimum, providing clear and animated examples with hands-on coding exercises will keep things fun throughout the course.
 
 Please check below to see all of the latest concepts covered in the course (more will be added overtime):
 
