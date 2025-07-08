@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="01 - String &amp; Character Literals/01 - String &amp; Character Literals.csproj" />
+  <Project Path="02 - String Concatenation/02 - String Concatenation.csproj" />
+  <Project Path="03 - String Formatting/03 - String Formatting.csproj" />
+  <Project Path="04 - Escape Sequences/04 - Escape Sequences.csproj" />
+  <Project Path="05 - Verbatim String Literals/05 - Verbatim String Literals.csproj" />
+  <Project Path="06 - Raw String Literals/06 - Raw String Literals.csproj" />
+  <Project Path="07 - StringBuilder/07 - StringBuilder.csproj" />
+  <Project Path="08 - String Operations/08 - String Operations.csproj" />
+</Solution>

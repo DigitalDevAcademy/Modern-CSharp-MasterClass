@@ -18,6 +18,6 @@ fileDetails = $$""""
     File Location: "C:\Documents\File.txt"
     File Size: {{{fileSize}}}
     """ More file information """
-    { No interpolated }
+    { Not interpolated }
     """";
 Console.WriteLine(fileDetails);
