@@ -4,15 +4,15 @@ Teacher teacher = new Teacher("Sarah", "Doe", "Computer Science");
 Console.WriteLine(student.GPA);
 Console.WriteLine(teacher.Department);
 
-Console.WriteLine($"Before: {teacher.FirstName} {teacher.LastName}");
-teacher.UpdateInfo("Sophia", "Doe");
-// student.UpdateInfo("Mark", "Doe");
-Console.WriteLine($"After: {teacher.FirstName} {teacher.LastName}");
+Console.WriteLine($"Before: {student.FirstName} {student.LastName}");
+student.SetInfo("Mark", "Doe");
+// teacher.SetInfo("Sophia", "Doe");
+Console.WriteLine($"After: {student.FirstName} {student.LastName}");
 
-student.UpdateGPA(4);
+student.SetGPA(4);
 Console.WriteLine(student.GPA);
 
-teacher.UpdateDepartment("Biology");
+teacher.SetDepartment("Biology");
 Console.WriteLine(teacher.Department);
 
 class SchoolMember
@@ -21,66 +21,29 @@ class SchoolMember
 
     public string LastName { get; private set; }
 
-    public SchoolMember(string firstName, string lastName)
+    protected SchoolMember(string firstName, string lastName)
     {
         FirstName = firstName;
         LastName = lastName;
     }
 
-    public void UpdateInfo(string firstName, string lastName)
+    public void SetInfo(string firstName, string lastName)
     {
-        if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
-        {
-            // In real-life you could return an error result or throw an exception and/or log it as well
-            Console.WriteLine("Invlaid firstname and/or lastname!");
-            return;
-        }
-
         FirstName = firstName;
         LastName = lastName;
     }
 }
 
-class Student : SchoolMember
+class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
 {
-    public decimal GPA { get; private set; }
+    public decimal GPA { get; private set; } = gpa;
 
-    public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
-    {
-        this.GPA = GPA;
-    }
-
-    public void UpdateGPA(decimal gpa)
-    {
-        if (gpa < 0 || gpa > 4)
-        {
-            // In real-life you could return an error result or throw an exception and/or log it as well
-            Console.WriteLine("Invlaid GPA!");
-            return;
-        }
-
-        GPA = gpa;
-    }
+    public void SetGPA(decimal gpa) => GPA = gpa;
 }
 
-class Teacher : SchoolMember
+class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName)
 {
-    public string Department { get; private set; }
+    public string Department { get; private set; } = department;
 
-    public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
-    {
-        Department = department;
-    }
-
-    public void UpdateDepartment(string department)
-    {
-        if (string.IsNullOrWhiteSpace(department))
-        {
-            // In real-life you could return an error result or throw an exception and/or log it as well
-            Console.WriteLine("Invlaid department!");
-            return;
-        }
-
-        Department = department;
-    }
+    public void SetDepartment(string department) => Department = department;
 }
