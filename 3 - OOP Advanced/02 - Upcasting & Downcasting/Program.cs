@@ -21,29 +21,19 @@ class SchoolMember
 
     public string LastName { get; init; }
 
-    public SchoolMember(string firstName, string lastName)
+    protected SchoolMember(string firstName, string lastName)
     {
         FirstName = firstName;
         LastName = lastName;
     }
 }
 
-class Student : SchoolMember
+class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
 {
-    public decimal GPA { get; init; }
-
-    public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
-    {
-        this.GPA = GPA;
-    }
+    public decimal GPA { get; init; } = gpa;
 }
 
-class Teacher : SchoolMember
+class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName)
 {
-    public string Department { get; init; }
-
-    public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
-    {
-        Department = department;
-    }
+    public string Department { get; init; } = department;
 }
