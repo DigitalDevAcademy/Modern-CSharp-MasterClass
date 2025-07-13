@@ -7,6 +7,6 @@
   <Project Path="06 - Interfaces/06 - Interfaces.csproj" />
   <Project Path="07 - Is Operator/07 - Is Operator.csproj" />
   <Project Path="08 - Sealed Modifier/08 - Sealed Modifier.csproj" />
-  <Project Path="09 - Static vs Instance Members/09 - Static vs Instance Members.csproj" />
-  <Project Path="10 - Readonly vs Const Fields/10 - Readonly vs Const Fields.csproj" />
+  <Project Path="09 - Static Modifier/09 - Static Modifier.csproj" />
+  <Project Path="10 - Readonly vs Const Modifiers/10 - Readonly vs Const Modifiers.csproj" />
 </Solution>
