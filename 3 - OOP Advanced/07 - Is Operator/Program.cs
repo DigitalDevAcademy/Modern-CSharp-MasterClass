@@ -1,10 +1,10 @@
 ﻿SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
 SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
 
-RequestApproveExtension(schoolMember1);
-RequestApproveExtension(schoolMember2);
+ProcessExtension(schoolMember1);
+ProcessExtension(schoolMember2);
 
-void RequestApproveExtension(SchoolMember schoolMember)
+void ProcessExtension(SchoolMember schoolMember)
 {
     if (schoolMember is Student s)
     {
@@ -24,33 +24,23 @@ abstract class SchoolMember
 
     public string LastName { get; init; }
 
-    public SchoolMember(string firstName, string lastName)
+    protected SchoolMember(string firstName, string lastName)
     {
         FirstName = firstName;
         LastName = lastName;
     }
 }
 
-class Student : SchoolMember
+class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
 {
-    public decimal GPA { get; init; }
-
-    public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
-    {
-        this.GPA = GPA;
-    }
+    public decimal GPA { get; init; } = gpa;
 
     public void RequestExtension() => Console.WriteLine("Requesting extension");
 }
 
-class Teacher : SchoolMember
+class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName)
 {
-    public string Department { get; init; }
-
-    public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
-    {
-        Department = department;
-    }
+    public string Department { get; init; } = department;
 
     public void ApproveExtension() => Console.WriteLine("Extension approved");
 }
