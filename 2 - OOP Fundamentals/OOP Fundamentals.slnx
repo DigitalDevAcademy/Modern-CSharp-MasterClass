@@ -8,4 +8,6 @@
   <Project Path="07 - Primary Constructor/07 - Primary Constructor.csproj" />
   <Project Path="08 - Expression-Bodied Members/08 - Expression-Bodied Members.csproj" />
   <Project Path="09 - Required Modifier/09 - Required Modifier.csproj" />
+  <Project Path="10 - Static Modifier/10 - Static Modifier.csproj" />
+  <Project Path="11 - Readonly vs Const Modifiers/11 - Readonly vs Const Modifiers.csproj" />
 </Solution>

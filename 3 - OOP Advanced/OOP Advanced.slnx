@@ -6,6 +6,4 @@
   <Project Path="05 - Method Overloading/05 - Method Overloading.csproj" />
   <Project Path="06 - Interfaces/06 - Interfaces.csproj" />
   <Project Path="07 - Is Operator/07 - Is Operator.csproj" />
-  <Project Path="08 - Static Modifier/08 - Static Modifier.csproj" />
-  <Project Path="09 - Readonly vs Const Modifiers/09 - Readonly vs Const Modifiers.csproj" />
 </Solution>
