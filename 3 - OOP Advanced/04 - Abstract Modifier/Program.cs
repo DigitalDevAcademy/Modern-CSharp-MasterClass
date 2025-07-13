@@ -1,42 +1,25 @@
-﻿SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
-SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
+﻿SchoolMember schoolMember1 = new Student();
+SchoolMember schoolMember2 = new Teacher();
 // Cannot instantiate an abstract class
-// SchoolMember schoolMember = new SchoolMember("SomeFirstName", "SomeLastName");
+// SchoolMember schoolMember = new SchoolMember();
 
 DisplaySchoolMemberParticipation(schoolMember1);
 DisplaySchoolMemberParticipation(schoolMember2);
 
 void DisplaySchoolMemberParticipation(SchoolMember schoolMember)
 {
-    Console.WriteLine($"{schoolMember.FirstName} {schoolMember.LastName} participation:");
+    Console.WriteLine(schoolMember.ToString());
     schoolMember.Participate();
 }
 
 abstract class SchoolMember
 {
-    public string FirstName { get; init; }
-
-    public string LastName { get; init; }
-
-    public SchoolMember(string firstName, string lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
-
     // Example of abstraction - we just know that a school member (teacher or student) participates but don't know how
     public abstract void Participate();
 }
 
 class Student : SchoolMember
 {
-    public decimal GPA { get; init; }
-
-    public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
-    {
-        this.GPA = GPA;
-    }
-
     public override void Participate()
     {
         /* 
@@ -48,20 +31,13 @@ class Student : SchoolMember
         ApplyFeedback();
     }
 
-    void TakeNotes() => Console.WriteLine("Taking notes.");
-    void CompleteHomework() => Console.WriteLine("Completing homework.");
-    void ApplyFeedback() => Console.WriteLine("Applying feedback.");
+    void TakeNotes() => Console.WriteLine("Taking notes");
+    void CompleteHomework() => Console.WriteLine("Completing homework");
+    void ApplyFeedback() => Console.WriteLine("Applying feedback");
 }
 
 class Teacher : SchoolMember
 {
-    public string Department { get; init; }
-
-    public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
-    {
-        Department = department;
-    }
-    
     public override void Participate()
     {
         /* 
@@ -73,7 +49,7 @@ class Teacher : SchoolMember
         ProvideFeedback();
     }
 
-    void TeachMaterial() => Console.WriteLine("Teaching material.");
-    void AssignHomework() => Console.WriteLine("Assigning homework.");
-    void ProvideFeedback() => Console.WriteLine("Providing feedback.");
+    void TeachMaterial() => Console.WriteLine("Teaching material");
+    void AssignHomework() => Console.WriteLine("Assigning homework");
+    void ProvideFeedback() => Console.WriteLine("Providing feedback");
 }
