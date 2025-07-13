@@ -11,39 +11,30 @@ void DisplaySchoolMemberInfo(SchoolMember schoolMember)
 
 class SchoolMember
 {
-    public string FirstName { get; init; }
+    private string _firstName;
 
-    public string LastName { get; init; }
+    private string _lastName;
 
-    public SchoolMember(string firstName, string lastName)
+    protected SchoolMember(string firstName, string lastName)
     {
-        FirstName = firstName;
-        LastName = lastName;
+        _firstName = firstName;
+        _lastName = lastName;
     }
 
-    public virtual string GetInfo() => $"{FirstName} {LastName}";
+    public virtual string GetInfo() => $"{_firstName} {_lastName}";
 }
 
-class Student : SchoolMember
+
+class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
 {
-    public decimal GPA { get; init; }
+    private decimal _gpa = gpa;
 
-    public Student(string firstName, string lastName, decimal GPA) : base(firstName, lastName)
-    {
-        this.GPA = GPA;
-    }
-
-    public override string GetInfo() => $"{base.GetInfo()} {GPA}";
+    public override string GetInfo() => $"{base.GetInfo()} {_gpa}";
 }
 
-class Teacher : SchoolMember
+class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName)
 {
-    public string Department { get; init; }
+    public string _department = department;
 
-    public Teacher(string firstName, string lastName, string department) : base(firstName, lastName)
-    {
-        Department = department;
-    }
-
-    public override string GetInfo() => $"{base.GetInfo()} {Department}";
+    public override string GetInfo() => $"{base.GetInfo()} {_department}";
 }
