@@ -11,7 +11,7 @@ char firstCharacter = text[0];
 Console.WriteLine(firstCharacter);
 
 // We can retrieve the ASCII code of a character
-int asciiCode = (int)firstCharacter;
+int asciiCode = firstCharacter;
 Console.WriteLine(asciiCode);
 
 // We can convert a char to string
@@ -24,7 +24,7 @@ Console.WriteLine(textLength);
 
 // Initialize an empty string
 string emptyText = string.Empty;
-Console.WriteLine("[" + emptyText + "]");
+Console.WriteLine($"[{emptyText}]");
 
 // Important: char and string are different types
 // char letter = "A";      // Error - we cannot auto-convert string to char
