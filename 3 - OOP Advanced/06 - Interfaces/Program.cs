@@ -1,6 +1,6 @@
-﻿IPayable payableWorker1 = new Teacher("Sarah", "Doe", "Computer Science");
-IPayable payableWorker2 = new Photographer("Some Example Photography LLC");
-IPayable payableWorker3 = new Electrician("Some Example Electrician LLC");
+﻿IPayable payableWorker1 = new Teacher();
+IPayable payableWorker2 = new Photographer();
+IPayable payableWorker3 = new Electrician();
 
 ProcessPayments(payableWorker1);
 ProcessPayments(payableWorker2);
@@ -13,46 +13,36 @@ public interface IPayable
     void RequestPayment();
 }
 
-abstract class SchoolMember(string firstName, string lastName)
+abstract class SchoolMember
 {
-    public string FirstName { get; init; } = firstName;
-
-    public string LastName { get; init; } = lastName;
-
     public abstract void Participate();
 }
 
-class Student(string firstName, string lastName, decimal gpa) : SchoolMember(firstName, lastName)
+class Student : SchoolMember
 {
-    public decimal GPA { get; init; } = gpa;
-
     public override void Participate() => Console.WriteLine("Completing homework and taking notes");
 }
 
-class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName), IPayable
+class Teacher : SchoolMember, IPayable
 {
-    public string Department { get; init; } = department;
-
     public void RequestPayment() => Console.WriteLine("Teacher has received payment");
 
     public override void Participate() => Console.WriteLine("Assigning homework and providing notes");
 }
 
-abstract class ExternalServiceProvider(string company)
+abstract class ExternalServiceProvider
 {
     public abstract void ProvideService();
-
-    public string Company { get; init; } = company;
 }
 
-class Photographer(string company) : ExternalServiceProvider(company), IPayable
+class Photographer : ExternalServiceProvider, IPayable
 {
-    public override void ProvideService() => Console.WriteLine("Taking photoes");
+    public override void ProvideService() => Console.WriteLine("Taking photos");
 
     public void RequestPayment() => Console.WriteLine("Photographer has received payment");
 }
 
-class Electrician(string company) : ExternalServiceProvider(company), IPayable
+class Electrician : ExternalServiceProvider, IPayable
 {
     public override void ProvideService() => Console.WriteLine("Fixing electricity");
 
