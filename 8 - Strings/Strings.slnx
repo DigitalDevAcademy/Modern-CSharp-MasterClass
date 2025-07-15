@@ -1,11 +1,9 @@
 <Solution>
   <Project Path="01 - String Structure/01 - String Structure.csproj" />
-  <Project Path="02 - String Iteration/02 - String Iteration.csproj" />
-  <Project Path="03 - String Concatenation/03 - String Concatenation.csproj" />
-  <Project Path="04 - String Formatting/04 - String Formatting.csproj" />
-  <Project Path="05 - Escape Sequences/05 - Escape Sequences.csproj" />
-  <Project Path="06 - Verbatim String Literals/06 - Verbatim String Literals.csproj" />
-  <Project Path="07 - Raw String Literals/07 - Raw String Literals.csproj" />
-  <Project Path="08 - StringBuilder/08 - StringBuilder.csproj" />
-  <Project Path="09 - String Operations/09 - String Operations.csproj" />
+  <Project Path="02 - String Interpolation/02 - String Interpolation.csproj" />
+  <Project Path="03 - Escape Sequences/03 - Escape Sequences.csproj" />
+  <Project Path="04 - Verbatim String Literals/04 - Verbatim String Literals.csproj" />
+  <Project Path="05 - Raw String Literals/05 - Raw String Literals.csproj" />
+  <Project Path="06 - StringBuilder/06 - StringBuilder.csproj" />
+  <Project Path="07 - String Operations/07 - String Operations.csproj" />
 </Solution>
