@@ -1,6 +1,4 @@
-﻿// Standard case statement, without pattern matching
-
-int userRole = 2;
+﻿int userRole = 2;
 
 switch (userRole)
 {
