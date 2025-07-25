@@ -1,6 +1,4 @@
-﻿// Both have a known number of iterations
-
-Console.WriteLine("--- Forward Iteration ---");
+﻿Console.WriteLine("--- Forward Iteration ---");
 for (int page = 1; page <= 10; page++)
 {
     Console.WriteLine(page);
