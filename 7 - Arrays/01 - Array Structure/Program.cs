@@ -13,14 +13,14 @@ Console.WriteLine(array[1]); // This shows the default value
 // array[10] = 1; // Will get an IndexOutOfRangeException
 
 // Using collection expressions available since C# 12 .NET 8
-int[] initArray = [1, 2, 3, 4, 5];
+int[] simpleArray = [1, 2, 3, 4, 5];
 
-Console.WriteLine(initArray[0]);
-Console.WriteLine(initArray[4]);
+Console.WriteLine(simpleArray[0]);
+Console.WriteLine(simpleArray[4]);
 
-Element[] initClassArray = [ new Element(10), new Element(20), new Element(50) ];
-Console.WriteLine(initClassArray[0].Value);
-Console.WriteLine(initClassArray[1].Value);
-Console.WriteLine(initClassArray[2].Value);
+Element[] elementArray = [ new Element(10), new Element(20), new Element(50) ];
+Console.WriteLine(elementArray[0].Value);
+Console.WriteLine(elementArray[1].Value);
+Console.WriteLine(elementArray[2].Value);
 
 class Element(int value) { public int Value { get; init; } = value; }
