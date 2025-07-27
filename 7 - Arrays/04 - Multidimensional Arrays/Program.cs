@@ -11,10 +11,7 @@
 
 PrintTreasureLocations(treasureMap);
 
-/* 
- * O(n * m) time, O(1) space
- * n is the number of rows and m is the number of columns
- */
+// O(n * m) time, O(1) space
 void PrintTreasureLocations(char[,] map)
 {
     var rows = map.GetLength(0);
