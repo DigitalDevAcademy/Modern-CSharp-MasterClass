@@ -7,10 +7,7 @@ SimpleIteration2(numbers);
 var result = TwoSum(numbers, 8);
 Console.WriteLine(string.Join(",", result));
 
-/* 
- * O(n) time, O(1) space
- * Since we have access to the index we can manipulate it and iterate backwards
- */
+// O(n) time, O(1) space
 void SimpleIteration1(int[] array)
 {
     for (int i = array.Length - 1; i >= 0; i--)
@@ -20,10 +17,7 @@ void SimpleIteration1(int[] array)
     Console.WriteLine();
 }
 
-/* 
- * O(n) time, O(1) space
- * We do not have access to the index, all we can do is iterate the array normally via cleaner syntax
- */
+// O(n) time, O(1) space
 void SimpleIteration2(int[] array)
 {
     foreach (int item in array)
