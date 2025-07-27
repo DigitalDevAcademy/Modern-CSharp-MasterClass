@@ -3,6 +3,6 @@
   <Project Path="02 - Array Iteration/02 - Array Iteration.csproj" />
   <Project Path="03 - Spread Elements/03 - Spread Elements.csproj" />
   <Project Path="04 - Multidimensional Arrays/04 - Multidimensional Arrays.csproj" />
-  <Project Path="05 - Jagged Array/05 - Jagged Array.csproj" />
+  <Project Path="05 - Jagged Arrays/05 - Jagged Arrays.csproj" />
   <Project Path="06 - Array Operations/06 - Array Operations.csproj" />
 </Solution>
