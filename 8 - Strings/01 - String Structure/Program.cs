@@ -1,31 +1,44 @@
-﻿// char represents is character and uses single quotes - known as a character literal
-char character = 'A';
-Console.WriteLine(character);
+﻿string[] phrases =  [ "simple word", "another word", "yet another word", "many more words" ];
+        
+string report = MaxVowelReportBuilder.Build(phrases);
 
-// string represents a sequence of characters and uses double quotes - known as a string literal
-string text = "Adventure";
-Console.WriteLine(text);
+Console.WriteLine(report);
 
-// We can access a single character from the string using indexing
-char firstCharacter = text[0];
-Console.WriteLine(firstCharacter);
+static class MaxVowelReportBuilder
+{
+    // Time O(n), Space O(1)
+    public static string Build(string[] phrases)
+    {
+        int totalPhrases = phrases.Length;
+        int totalVowelCount = 0;
+        int maxVowelCount = 0;
+        string maxVowelPhrase = string.Empty;
 
-// We can retrieve the ASCII code of a character
-int asciiCode = firstCharacter;
-Console.WriteLine(asciiCode);
+        foreach (string currentPhrase in phrases)
+        {
+            int vowelCount = 0;
 
-// We can convert a char to string
-string firstCharacterAsString = firstCharacter.ToString();
-Console.WriteLine(firstCharacterAsString);
+            foreach (char c in currentPhrase)
+            {
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+                {
+                    vowelCount++;
+                    totalVowelCount++;
+                }
+            }
 
-// We get the length of the string by using Length property
-int textLength = text.Length;
-Console.WriteLine(textLength);
+            if (vowelCount > maxVowelCount)
+            {
+                maxVowelCount = vowelCount;
+                maxVowelPhrase = currentPhrase;
+            }
+        }
 
-// Initialize an empty string
-string emptyText = string.Empty;
-Console.WriteLine($"[{emptyText}]");
-
-// Important: char and string are different types
-// char letter = "A";      // Error - we cannot auto-convert string to char
-// string text = 'C';      // Error - we cannot auto-convert char to string
+        // There are better ways to format a multi-line string, covered later in this section
+        return $"Max Vowel Report\n" +
+               "Total Phrase Count: " + totalPhrases + "\n" +
+               "Total Vowel Count: " + totalVowelCount + "\n" +
+               "Max Vowel Count: " + maxVowelCount + "\n" +
+               "Max Vowel Phrase: " + maxVowelPhrase + "\n";
+    }
+}
