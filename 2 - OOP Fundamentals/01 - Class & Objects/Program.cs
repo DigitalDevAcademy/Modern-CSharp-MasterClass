@@ -1,5 +1,4 @@
-﻿// Instantiating a new instance of a class using target-typed new expression form C# 9 .NET 5
-Employee employee1 = new();
+﻿Employee employee1 = new();
 // You can also instantiate this way, but unless you have a good reason to do so use target-typed new expression
 // Employee employee1 = new Employee();
 // var employee1 = new Employee();
