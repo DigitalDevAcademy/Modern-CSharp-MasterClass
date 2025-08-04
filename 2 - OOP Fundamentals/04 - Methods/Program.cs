@@ -12,7 +12,6 @@ class Box
 
     public int ItemCount { get; set; }
 
-    // Void method with one parameter
     public void AddItems(int newItems)
     {
         if (ItemCount + newItems > Capacity) 
