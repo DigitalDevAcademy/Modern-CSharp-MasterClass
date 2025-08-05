@@ -4,7 +4,6 @@ Console.WriteLine(point.GetInfo());
 // point1.X = 20;
 // point1.Y = 20;
 
-// Readonly structs available starting C# 7.2 .NET Core 2.1/Framework 4.7.2
 readonly struct Point
 {
     public int X { get; init; }
