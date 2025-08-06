@@ -7,7 +7,6 @@ readonly struct DynamicPoint
     public int Y { get; init; }
     public int Z { get; init; }      
 
-    // C# 11 .NET 7 introduced auto-default structs
     public DynamicPoint()
     {
         X = 10;
