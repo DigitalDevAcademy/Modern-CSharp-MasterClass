@@ -10,17 +10,15 @@ class Robot
 
     public string Map { get; set; }
 
-    // Parameterless constructor
     public Robot()
     {
         Name = "Default Robot";
         Map = string.Empty;
     }
 
-    // Constructor with two params and basic validation logic
     public Robot(string name, string map)
     {
-        Name = string.IsNullOrWhiteSpace(name) ? "Default Robot" : name;
+        Name = name;
         Map = map;
     }
 }
