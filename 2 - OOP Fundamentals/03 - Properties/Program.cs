@@ -21,7 +21,7 @@ class Bus
     public string Name
     {
         get { return _name; }
-        set { _name = string.IsNullOrWhiteSpace(value) ? "Default Bus" : value; }
+        set { _name = string.IsNullOrWhiteSpace(value) ? _name : value; }
     }
 
     // Auto-property with get and set accessors 

@@ -18,6 +18,10 @@ class Robot
 
     public Robot(string name, string map)
     {
+        // Usually perform validation here
+        // If name is invlaid do something, throw exception/set default value/etc
+        // If map is invlaid something, throw exception/set default value/etc
+
         Name = name;
         Map = map;
     }
