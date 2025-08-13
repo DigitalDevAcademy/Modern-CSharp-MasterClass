@@ -15,12 +15,10 @@ class Manager
 
     public int Age { get; set; }
 
-    // This is constructor chaining that can be used with the this keyword
     public Manager() : this("Default Name")
     {
     }
 
-    // Showcasing multiple constructor chaining using the this keyword
     public Manager(string fullName) : this(fullName, 30)
     {
     }
