@@ -1,33 +1,39 @@
-﻿Box box = new() { Capacity = 20 };
-Console.WriteLine(box.IsFull());
-box.AddItems(10);
-Console.WriteLine(box.IsFull());
-box.AddItems(10);
-Console.WriteLine(box.IsFull());
-box.AddItems(1);
+﻿CloudProvider someCloudProvider = new();
 
-class Box
+Console.WriteLine("-- SaaS --");
+someCloudProvider.ProvideSaaS("Web App");
+
+Console.WriteLine("-- SaaS --");
+someCloudProvider.ProvideSaaS("Mobile App");
+
+Console.WriteLine("-- PaaS --");
+someCloudProvider.ProvidePaaS("Data Management");
+
+Console.WriteLine("-- IaaS --");
+someCloudProvider.ProvideIaaS("Lift-And-Shift Migration");
+
+class CloudProvider
 {
-    public int Capacity { get; init; } = 10;
-
-    public int ItemCount { get; set; }
-
-    public void AddItems(int newItems)
+    public void ProvideSaaS(string config)
     {
-        if (ItemCount + newItems > Capacity) 
-        {
-            Console.WriteLine("Over capacity.");
-            // Return statement only used to exit the method back to the caller
-            return;
-        }
-
-        ItemCount += newItems;
-        Console.WriteLine($"Item added. Total number of items are {ItemCount}.");
+        Console.WriteLine($"Providing a {config}");
+        ProvidePaaS(config);
     }
 
-    // Parameterless method returning a value of type bool
-    public bool IsFull()
+    public void ProvidePaaS(string config)
     {
-        return ItemCount >= Capacity;
+        Console.WriteLine($"Providing a platform for {config}");
+        ProvideIaaS(config);
+    }
+
+    public void ProvideIaaS(string config)
+    {
+        Console.WriteLine($"Providing an infra for {config}");
+        ProvideHardware();
+    }
+
+    private void ProvideHardware()
+    {
+        Console.WriteLine("Providing hardware");
     }
 }
