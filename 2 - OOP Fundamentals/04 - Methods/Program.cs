@@ -1,15 +1,15 @@
 ﻿CloudProvider someCloudProvider = new();
 
-Console.WriteLine("-- SaaS --");
+Console.WriteLine("--- SaaS ---");
 someCloudProvider.ProvideSaaS("Web App");
 
-Console.WriteLine("-- SaaS --");
+Console.WriteLine("--- SaaS ---");
 someCloudProvider.ProvideSaaS("Mobile App");
 
-Console.WriteLine("-- PaaS --");
+Console.WriteLine("--- PaaS ---");
 someCloudProvider.ProvidePaaS("Data Management");
 
-Console.WriteLine("-- IaaS --");
+Console.WriteLine("--- IaaS ---");
 someCloudProvider.ProvideIaaS("Lift-And-Shift Migration");
 
 class CloudProvider
