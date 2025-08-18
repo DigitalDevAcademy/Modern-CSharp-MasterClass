@@ -1,8 +1,8 @@
-﻿Robot robotOne = new();
-Console.WriteLine($"Robot Info: {robotOne.Description}, {robotOne.Map}");
+﻿Robot robot1 = new();
+Console.WriteLine($"Robot 1: {robot1.Description}, {robot1.Map}");
 
-Robot robotTwo = new("New Robot", "New Map");
-Console.WriteLine($"Robot Info: {robotTwo.Description}, {robotTwo.Map}");
+Robot robot2 = new("New Robot", "New Map");
+Console.WriteLine($"Robot 2: {robot2.Description}, {robot2.Map}");
 
 class Robot
 {
