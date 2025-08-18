@@ -4,7 +4,7 @@ robotOne.PrintRobotInfo();
 Robot robotTwo = new("New Robot", "New Map");
 robotTwo.PrintRobotInfo();
 
-class Robot(string name, string map)
+class Robot(string description, string map)
 {
     public Robot() : this("Default Robot", string.Empty) { }
     
@@ -13,7 +13,7 @@ class Robot(string name, string map)
      * do not use them elsewhere in the class becasue it could create a double
      * backing field problem which could be confusing to troubleshoot
      */
-    public string Name { get; init; } = name;
+    public string Description { get; init; } = description;
 
     public string Map { get; set; } = map;
 
@@ -25,6 +25,6 @@ class Robot(string name, string map)
          * Even though I could use primary constructor parameters I am not using them 
          * to avoid double backing field issues
          */
-        Console.WriteLine($"Name: {Name}, Map: {Map}");
+        Console.WriteLine($"Description: {Description}, Map: {Map}");
     }
 }
