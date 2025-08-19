@@ -1,16 +1,14 @@
-﻿AdditionHelper.Add(10);
-Console.WriteLine(AdditionHelper.Result);
+﻿ConsoleLogger.LogInfo("This is just a message");
 
-AdditionHelper.Add(10);
-Console.WriteLine(AdditionHelper.Result);
+ConsoleLogger.LogWarning("Please check something, this is a warning");
 
-// Static class cannot have any instance members only static members
-static class AdditionHelper
+ConsoleLogger.LogError("Application stopped, error occured");
+
+static class ConsoleLogger
 {
-    // We can have static fields and properties, but I am only using a property to keep the example concise
-    public static int Result { get; set; }
+    public static void LogInfo(string message) => Console.WriteLine($"[INFO] {message}");
 
-    static AdditionHelper() => Result = 0;
+    public static void LogWarning(string message) => Console.WriteLine($"[WARNING] {message}!");
 
-    public static void Add(int number) => Result += number;
+    public static void LogError(string message) => Console.WriteLine($"[ERROR] {message}!!!");
 }
