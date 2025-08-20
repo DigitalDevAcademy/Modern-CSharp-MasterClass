@@ -1,18 +1,14 @@
-﻿Product productOne = new() { Description = "Laptop", Price = 1050.55m, Category = "Technology" };
-Console.WriteLine(productOne.GetInfo());
+﻿Product product1 = new() { Title = "Laptop", Price = 1050.55m, Category = "Technology" };
+Console.WriteLine($"Product 1: {product1.Title}, ${product1.Price}, {product1.Category}");
 
-Product productTwo = new() { Description = "Battery Pack", Price = 15.99m };
-Console.WriteLine(productTwo.GetInfo());
+Product product2 = new() { Title = "Battery Pack", Price = 15.99m };
+Console.WriteLine($"Product 2: {product2.Title}, ${product2.Price}, {product2.Category}");
 
 class Product
 {
-    // Object initializer is required to set this property
-    public required string Description { get; init; }
+    public required string Title { get; set; }
 
-    // Object initializer is required to set this property
     public required decimal Price { get; init; }
 
     public string Category { get; set; } = "Default";
-
-    public string GetInfo() => $"Product Info: {Description} {Price} {Category}";
 }
