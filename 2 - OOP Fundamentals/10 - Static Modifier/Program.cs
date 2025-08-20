@@ -1,8 +1,8 @@
 ﻿ConsoleLogger.LogInfo("This is just a message");
 
-ConsoleLogger.LogWarning("Please check something, this is a warning");
+ConsoleLogger.LogWarning("Might not be able to process the file");
 
-ConsoleLogger.LogError("Application stopped, error occured");
+ConsoleLogger.LogError("Application stopped working ");
 
 static class ConsoleLogger
 {
