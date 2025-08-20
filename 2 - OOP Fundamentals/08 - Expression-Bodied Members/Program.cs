@@ -2,8 +2,8 @@
 Console.WriteLine(someClass.SomeProperty);
 someClass.SomeProperty = "New Value";
 Console.WriteLine(someClass.SomeProperty);
-Console.WriteLine(someClass.someReadOnlyProperty);
-Console.WriteLine(someClass.someMethod("New Param Value"));
+Console.WriteLine(someClass.SomeReadOnlyProperty);
+Console.WriteLine(someClass.SomeMethod("New Param Value"));
 
 class SomeClass
 {
@@ -17,7 +17,7 @@ class SomeClass
         set => _someField = value;
     }
 
-    public string someReadOnlyProperty => "Default ReadOnly Value";
+    public string SomeReadOnlyProperty => "Default ReadOnly Value";
 
-    public string someMethod(string someParam) => $"ReadOnly Property Value: {someReadOnlyProperty}, SomeParam Value: {someParam}.";
+    public string SomeMethod(string someParam) => $"Property: {SomeReadOnlyProperty}, Param: {someParam}";
 }
