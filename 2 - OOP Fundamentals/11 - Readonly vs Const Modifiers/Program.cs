@@ -4,12 +4,12 @@ SomeClass someClass = new(dependency);
 someClass.SomeMethod();
 someClass.PrintLocalConstant();
 
-Console.WriteLine($"Static ReadOnly Field Value: {SomeClass.SomeUniqueId}");
 Console.WriteLine($"Const Field Value: {SomeClass.SomeConstant}");
+Console.WriteLine($"Static ReadOnly Field Value: {SomeClass.SomeUniqueId}");
 
 class SomeClass
 {
-    public const string SomeConstant = "Constant value";
+    public const string SomeConstant = "Constant Value";
 
     public static readonly Guid SomeUniqueId = Guid.NewGuid();
 
