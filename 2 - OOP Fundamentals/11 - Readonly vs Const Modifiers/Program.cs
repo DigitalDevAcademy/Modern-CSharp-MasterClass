@@ -28,5 +28,5 @@ class SomeClass
 
 class SomeDependency
 {
-    public void DoWork() => Console.WriteLine("Work completed");
+    public void DoWork() => Console.WriteLine("Work Completed");
 }
