@@ -34,7 +34,7 @@ class Student(string firstName, string lastName, decimal gpa) : SchoolMember(fir
 
 class Teacher(string firstName, string lastName, string department) : SchoolMember(firstName, lastName)
 {
-    public string _department = department;
+    private string _department = department;
 
     public override string GetInfo() => $"{base.GetInfo()} {_department}";
 }
