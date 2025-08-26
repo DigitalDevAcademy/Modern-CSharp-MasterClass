@@ -12,7 +12,7 @@ void Work2(int input)
 {
     for (int i = 0; i < input; i++)
     {
-        Console.WriteLine($"Processing item{i}.");
+        Console.WriteLine($"Processing item{i}");
     }
 }
 
@@ -37,7 +37,7 @@ void Work4(int input1, int input2)
     {
         for (int col = 0; col < input2; col++)
         {
-            Console.WriteLine($"Processing  Row{row} - Col{col}.");
+            Console.WriteLine($"Processing  Row{row} - Col{col}");
         }
     }
 }
