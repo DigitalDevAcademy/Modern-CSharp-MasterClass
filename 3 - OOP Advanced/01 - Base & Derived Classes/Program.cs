@@ -1,12 +1,11 @@
-﻿Student student = new Student("John", "Doe", 3.5m);
-Teacher teacher = new Teacher("Sarah", "Doe", "Computer Science");
+﻿Student student = new("John", "Doe", 3.5m);
+Teacher teacher = new("Sarah", "Doe", "Computer Science");
 
 Console.WriteLine(student.GPA);
 Console.WriteLine(teacher.Department);
 
 Console.WriteLine($"Before: {student.FirstName} {student.LastName}");
 student.SetInfo("Mark", "Doe");
-// teacher.SetInfo("Sophia", "Doe");
 Console.WriteLine($"After: {student.FirstName} {student.LastName}");
 
 student.SetGPA(4);
