@@ -1,6 +1,6 @@
 ﻿// Upcasting
-SchoolMember schoolMember1 = new Student("John", "Doe", 3.5m);
-SchoolMember schoolMember2 = new Teacher("Sarah", "Doe", "Computer Science");
+SchoolMember schoolMember1 = new Student("Mateo", "Rossi", 3.5m);
+SchoolMember schoolMember2 = new Teacher("Marcus", "Fischer", "Computer Science");
 
 // You cannot access derived class members from the base class
 // Console.WriteLine(schoolMember1.GPA); 

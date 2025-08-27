@@ -1,7 +1,7 @@
 ﻿CourseRepository courseRepository = new(); 
 RegistrationSystem registrationSystem = new(courseRepository);
 
-Student newStudent = new("John", "Doe"); 
+Student newStudent = new("Mateo", "Rossi"); 
 
 var registration1 = registrationSystem.Register(newStudent, 1);
 var registration2 = registrationSystem.Register(newStudent, "ABC123");
