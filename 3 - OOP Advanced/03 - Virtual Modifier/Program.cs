@@ -4,10 +4,7 @@ SchoolMember schoolMember2 = new Teacher("Mark", "Doe", "Computer Science");
 DisplaySchoolMemberInfo(schoolMember1);
 DisplaySchoolMemberInfo(schoolMember2);
 
-void DisplaySchoolMemberInfo(SchoolMember schoolMember)
-{
-    Console.WriteLine(schoolMember.GetInfo());
-}
+void DisplaySchoolMemberInfo(SchoolMember schoolMember) => Console.WriteLine(schoolMember.GetInfo());
 
 class SchoolMember
 {
