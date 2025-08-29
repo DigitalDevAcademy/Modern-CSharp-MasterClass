@@ -9,7 +9,7 @@ readonly struct Point
     public int X { get; init; }
     public int Y { get; init; }
 
-    // We can also use immutable fields
+    // Can also use immutable fields
     // public readonly int X;
     // public readonly int Y;
 
