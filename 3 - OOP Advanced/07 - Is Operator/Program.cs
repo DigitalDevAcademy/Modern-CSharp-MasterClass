@@ -42,5 +42,5 @@ class Teacher(string firstName, string lastName, string department) : SchoolMemb
 {
     public string Department { get; init; } = department;
 
-    public void ApproveExtension() => Console.WriteLine("Extension approved");
+    public void ApproveExtension() => Console.WriteLine("Approving extension");
 }

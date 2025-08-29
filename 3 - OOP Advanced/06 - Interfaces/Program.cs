@@ -1,14 +1,14 @@
-﻿IPayable payableWorker1 = new Teacher();
-IPayable payableWorker2 = new Photographer();
-IPayable payableWorker3 = new Electrician();
+﻿IPayable worker1 = new Teacher();
+IPayable worker2 = new Photographer();
+IPayable worker3 = new Electrician();
 
-ProcessPayments(payableWorker1);
-ProcessPayments(payableWorker2);
-ProcessPayments(payableWorker3);
+ProcessPayments(worker1);
+ProcessPayments(worker2);
+ProcessPayments(worker3);
 
-void ProcessPayments(IPayable payableSchoolMember) => payableSchoolMember.RequestPayment();
+void ProcessPayments(IPayable worker) => worker.RequestPayment();
 
-public interface IPayable
+interface IPayable
 {
     void RequestPayment();
 }
@@ -25,9 +25,10 @@ class Student : SchoolMember
 
 class Teacher : SchoolMember, IPayable
 {
+    public override void Participate() => Console.WriteLine("Assigning homework and providing notes");
+
     public void RequestPayment() => Console.WriteLine("Teacher has received payment");
 
-    public override void Participate() => Console.WriteLine("Assigning homework and providing notes");
 }
 
 abstract class ExternalServiceProvider
