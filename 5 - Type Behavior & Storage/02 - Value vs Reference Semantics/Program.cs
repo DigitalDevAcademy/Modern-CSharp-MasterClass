@@ -1,48 +1,42 @@
-﻿// Initializing a struct and a class with only one field
-// Value vs reference semantics - example 1
-UserStruct userStruct = new(30);
-UserClass userClass = new(30);
+﻿// Example 1
+UserStruct structObject = new(30);
+UserClass classObject = new(30);
 
-UserStruct anotherUserStruct = userStruct; // Creates a copy
-anotherUserStruct.Age++;
+UserStruct anotherStructObject = structObject; // Creates a copy
+anotherStructObject.Age++;
 
-Console.WriteLine(anotherUserStruct.Age);
-Console.WriteLine(userStruct.Age);
+Console.WriteLine(anotherStructObject.Age);
+Console.WriteLine(structObject.Age);
 
-UserClass anotherUserClass = userClass; // Creates a reference
-anotherUserClass.Age++;
+UserClass anotherClassObject = classObject; // Creates a reference
+anotherClassObject.Age++;
 
-Console.WriteLine(anotherUserClass.Age);
-Console.WriteLine(userClass.Age);
+Console.WriteLine(anotherClassObject.Age);
+Console.WriteLine(classObject.Age);
 
-// Value vs reference semantics - example 2
-// UserStruct userStruct = new(30);
-// UserClass userClass = new(30);
+// Example 2
+// UserStruct structObject = new(30);
+// UserClass classObject = new(30);
 
-// // Printing both values before changing them
-// Console.WriteLine(userStruct.Age);
-// Console.WriteLine(userClass.Age);
+// Console.WriteLine(structObject.Age);
+// Console.WriteLine(classObject.Age);
 
-// ChangeUserAge(userStruct, userClass);
+// ChangeUserAge(structObject, classObject);
 
-// // Printing both values after changing them
-// Console.WriteLine(userStruct.Age);
-// Console.WriteLine(userClass.Age);
+// Console.WriteLine(structObject.Age);
+// Console.WriteLine(classObject.Age);
 
-// // Modify both values to see the difference between stack vs heap
-// void ChangeUserAge(UserStruct userStruct, UserClass userClass)
+// void ChangeUserAge(UserStruct structObject, UserClass classObject)
 // {
-//     userStruct.Age = 35;
-//     userClass.Age = 35;
+//     structObject.Age = 35;
+//     classObject.Age = 35;
 // }
 
-// Struct is a value type
 struct UserStruct(int age)
 {
     public int Age { get; set; } = age;
 }
 
-// Class is a reference type
 class UserClass(int age)
 {
     public int Age { get; set; } = age;
