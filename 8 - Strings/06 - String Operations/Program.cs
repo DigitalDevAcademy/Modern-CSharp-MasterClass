@@ -1,24 +1,34 @@
-﻿string text = "This is an example text.";
-string substring = "example";
+﻿string text = "I just learned modern C#";
+string substring = "modern";
 string untrimmedText = "  Example, Text!  ";
 
-Console.WriteLine(text.IndexOf(substring)); // Get index of first "example" in 'text'
-Console.WriteLine(text.LastIndexOf("e")); // Get last index of "e" in 'text'
-Console.WriteLine(text.Contains("example")); // Check if "example" is in 'text'
-Console.WriteLine(text.StartsWith("This")); // Check if 'text' starts with "This"
-Console.WriteLine(text.EndsWith("text.")); // Check if 'text' ends with "text."
-Console.WriteLine(text.Replace("text", "sentence")); // Replace word "text" with "sentence"
-Console.WriteLine(text.ToLower()); // Lowercase 'text'
-Console.WriteLine(text.ToUpper()); // Uppercase 'text'
-Console.WriteLine(string.IsNullOrEmpty(string.Empty)); // Check if string is null or empty
-Console.WriteLine(string.IsNullOrWhiteSpace(string.Empty)); // Check if string is null, empty, or spaces only
-Console.WriteLine("[" + untrimmedText.Trim() + "]"); // Trim spaces from start and end
-Console.WriteLine("[" + untrimmedText.TrimStart() + "]"); // Trim spaces from start
-Console.WriteLine("[" + untrimmedText.TrimEnd() + "]"); // Trim spaces from end
+Console.WriteLine(text.IndexOf(substring));
+Console.WriteLine(text.Contains("learned"));
+Console.WriteLine(text.StartsWith("I"));
+Console.WriteLine(text.EndsWith("C#"));
+Console.WriteLine(text.Replace("learned", "mastered"));
+Console.WriteLine(text.ToLower());
+Console.WriteLine(text.ToUpper());
+Console.WriteLine(string.IsNullOrEmpty(string.Empty));
+Console.WriteLine(string.IsNullOrWhiteSpace("   "));
+Console.WriteLine("[" + untrimmedText.Trim() + "]");
+Console.WriteLine("[" + untrimmedText.TrimStart() + "]");
+Console.WriteLine("[" + untrimmedText.TrimEnd() + "]");
 
-string[] parts = text.Split(' '); // Split 'text' into parts based on space character
-for (int i = 0; i < parts.Length; i++) 
+string[] parts = text.Split(' ');
+foreach (var part in parts) 
 {
-    Console.WriteLine(parts[i]); // Print each part
+    Console.WriteLine(part);
 }
-Console.WriteLine();
+
+string joinedTextByWhiteSpaces = string.Join(" ", parts);
+string joinedTextByDashes = string.Join("-", parts);
+
+Console.WriteLine(joinedTextByWhiteSpaces);
+Console.WriteLine(joinedTextByDashes);
+
+char[] textToCharArray = text.ToCharArray();
+foreach (var character in textToCharArray)
+{
+    Console.WriteLine(character);
+}
