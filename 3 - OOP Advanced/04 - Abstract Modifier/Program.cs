@@ -1,7 +1,7 @@
 ﻿SchoolMember schoolMember1 = new Student();
 SchoolMember schoolMember2 = new Teacher();
 // Cannot instantiate an abstract class
-// SchoolMember schoolMember = new SchoolMember();
+// SchoolMember schoolMember = new();
 
 DisplaySchoolMemberParticipation(schoolMember1);
 DisplaySchoolMemberParticipation(schoolMember2);
