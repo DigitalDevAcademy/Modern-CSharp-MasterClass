@@ -14,7 +14,7 @@ class Person(string firstName, string lastName)
 
     public string LastName { get; init; } = lastName;
     
-    public override string ToString() => $"FirstName {FirstName} and LastName {LastName}.";
+    public override string ToString() => $"FirstName {FirstName} and LastName {LastName}";
 }
 
 struct Point(int x, int y)
@@ -22,5 +22,5 @@ struct Point(int x, int y)
     public int X { get; init; } = x;
     public int Y { get; init; } = y;
 
-    public override string ToString() => $"X {X} and Y {Y}.";
+    public override string ToString() => $"X {X} and Y {Y}";
 }

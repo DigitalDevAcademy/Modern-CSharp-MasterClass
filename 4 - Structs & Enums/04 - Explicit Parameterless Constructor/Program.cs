@@ -12,5 +12,5 @@ readonly struct Point
         Y = 10;
     }
 
-    public string GetInfo() => $"X is {X}, Y is {Y}.";
+    public string GetInfo() => $"X is {X}, Y is {Y}";
 }

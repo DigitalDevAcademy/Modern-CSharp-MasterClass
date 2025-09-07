@@ -13,7 +13,7 @@ readonly struct Point(int x, int y) : IPrintable
 
     public int Y { get; init; } = y;
 
-    public void Print() => Console.WriteLine($"Printing point ({X}, {Y}).");
+    public void Print() => Console.WriteLine($"Printing point ({X}, {Y})");
 }
 
 interface IPrintable
