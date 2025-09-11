@@ -16,7 +16,7 @@ Console.WriteLine("[" + untrimmedText.TrimStart() + "]");
 Console.WriteLine("[" + untrimmedText.TrimEnd() + "]");
 
 string[] parts = text.Split(' ');
-foreach (var part in parts) 
+foreach (string part in parts) 
 {
     Console.WriteLine(part);
 }
@@ -28,7 +28,7 @@ Console.WriteLine(joinedTextByWhiteSpaces);
 Console.WriteLine(joinedTextByDashes);
 
 char[] textToCharArray = text.ToCharArray();
-foreach (var character in textToCharArray)
+foreach (char character in textToCharArray)
 {
     Console.WriteLine(character);
 }

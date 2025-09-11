@@ -1,5 +1,5 @@
-﻿var fileDetails = string.Empty;
-var fileSize = "4 KB";
+﻿string fileDetails = string.Empty;
+string fileSize = "4 KB";
 
 fileDetails = """ 
     File Location: "C:\Documents\File.txt"
