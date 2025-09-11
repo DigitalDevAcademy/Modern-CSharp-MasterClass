@@ -5,14 +5,14 @@ UserClass classObject = new(30);
 UserStruct anotherStructObject = structObject; // Creates a copy
 anotherStructObject.Age++;
 
-Console.WriteLine(anotherStructObject.Age);
 Console.WriteLine(structObject.Age);
+Console.WriteLine(anotherStructObject.Age);
 
 UserClass anotherClassObject = classObject; // Creates a reference
 anotherClassObject.Age++;
 
-Console.WriteLine(anotherClassObject.Age);
 Console.WriteLine(classObject.Age);
+Console.WriteLine(anotherClassObject.Age);
 
 // Example 2
 // UserStruct structObject = new(30);
