@@ -4,7 +4,7 @@ SimpleIteration1(numbers);
 
 SimpleIteration2(numbers);
 
-var result = TwoSum(numbers, 8);
+int[] result = TwoSum(numbers, 8);
 Console.WriteLine(string.Join(",", result));
 
 // O(n) time, O(1) space
@@ -33,12 +33,12 @@ void SimpleIteration2(int[] array)
  */
 int[] TwoSum(int[] array, int targetSum)
 {
-    var startIdx = 0;
-    var endIdx = numbers.Length - 1;
+    int startIdx = 0;
+    int endIdx = numbers.Length - 1;
 
     while (startIdx < endIdx)
     {
-        var potentialMatch = array[startIdx] + array[endIdx];
+        int potentialMatch = array[startIdx] + array[endIdx];
 
         if (potentialMatch == targetSum)
         {

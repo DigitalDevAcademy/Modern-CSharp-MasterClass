@@ -13,7 +13,7 @@ void DisplayClassGrades(int[][] classGrades)
     for (int classIdx = 0; classIdx < classGrades.Length; classIdx++)
     {
         Console.WriteLine($"Class {classIdx + 1}");
-        foreach (var studentGrade in classGrades[classIdx])
+        foreach (int studentGrade in classGrades[classIdx])
         {
             Console.Write($"[{studentGrade}]");
         }
