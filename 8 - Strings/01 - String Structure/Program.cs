@@ -6,7 +6,7 @@ Console.WriteLine(report);
 
 static class MaxVowelReportBuilder
 {
-    // Time O(n), Space O(1)
+    // O(n) time, O(1) space
     public static string Build(string[] phrases)
     {
         int totalPhrases = phrases.Length;
@@ -34,11 +34,12 @@ static class MaxVowelReportBuilder
             }
         }
 
-        // There are better ways to format a multi-line string, covered later in this section
-        return $"Max Vowel Report\n" +
-               "Total Phrase Count: " + totalPhrases + "\n" +
-               "Total Vowel Count: " + totalVowelCount + "\n" +
-               "Max Vowel Count: " + maxVowelCount + "\n" +
-               "Max Vowel Phrase: " + maxVowelPhrase + "\n";
+        return $"""
+        Max Vowel Report 
+        Total Phrase Count: {totalPhrases} 
+        Total Vowel Count: {totalVowelCount}
+        Max Vowel Count: {maxVowelCount}
+        Max Vowel Phrase: {maxVowelPhrase}
+        """;
     }
 }
