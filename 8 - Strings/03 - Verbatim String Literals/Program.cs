@@ -7,10 +7,10 @@ Console.WriteLine(fileDetails);
 
 fileDetails = $@"File Location: ""C:\Documents\File.txt"" 
                 File Size: {fileSize}
-                {{No interpolation}}";
+                {{Not interpolated}}";
 Console.WriteLine(fileDetails);
 
 fileDetails = @$"File Location: ""C:\Documents\File.txt"" 
                 File Size: {fileSize}
-                {{No interpolation}}";
+                {{Not interpolated}}";
 Console.WriteLine(fileDetails);
