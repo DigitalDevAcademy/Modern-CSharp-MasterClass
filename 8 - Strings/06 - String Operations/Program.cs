@@ -46,8 +46,8 @@ foreach (string part in parts)
 }
 
 // O(m) time, O(m) space
-string joinedTextByWhiteSpaces = string.Join(" ", parts);
-string joinedTextByDashes = string.Join("-", parts);
+string joinedTextByWhiteSpaces = string.Join(' ', parts);
+string joinedTextByDashes = string.Join('-', parts);
 
 Console.WriteLine(joinedTextByWhiteSpaces);
 Console.WriteLine(joinedTextByDashes);
