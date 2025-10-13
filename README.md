@@ -18,8 +18,8 @@ Please check below to see all of the latest concepts covered in the course (more
 
 | C# Version | .NET Version | Feature Description |
 |------------------|-------------------|------------------------|
-| ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview 4](https://img.shields.io/badge/.NET-10.0--preview--4-yellow) | File-based apps |
-| ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview 4](https://img.shields.io/badge/.NET-10.0--preview--4-yellow) | Field-backed properties |
+| ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview](https://img.shields.io/badge/.NET-10.0--preview-yellow) | File-based apps |
+| ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview](https://img.shields.io/badge/.NET-10.0--preview-yellow) | Field-backed properties |
 | ![C# 13.0](https://img.shields.io/badge/C%23-13.0-blue) | ![.NET 9](https://img.shields.io/badge/.NET-9.0-yellow) | New .slnx solution format |
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Collection expression |
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Spread operator |
