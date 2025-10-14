@@ -1,38 +1,35 @@
-﻿Employee employee = new("John", "Doe", "Marketing");
-Console.WriteLine(employee.Badge);
-Console.WriteLine(employee.Department);
-employee.Department = "Sales";
-Console.WriteLine(employee.Department);
+﻿SomeClass someClass = new();
+Console.WriteLine(someClass.SomeProperty);
+someClass.SomeProperty = string.Empty;
+Console.WriteLine(someClass.SomeProperty);
+someClass.SomeProperty = "Another Value";
+Console.WriteLine(someClass.SomeProperty);
+Console.WriteLine(someClass.SomeCompuatedProperty);
 
-class Employee
+class SomeClass
 {
-    private string _firstName;
+    // Example 1
+    private string _someBackingField = "Some Value";
 
-    private string _lastName;
-
-    private string _department;
-
-    public Employee(string firstName, string lastName, string departement)
+    public string SomeProperty
     {
-        _firstName = firstName;
-        _lastName = lastName;
-        _department = departement;
+        get { return _someBackingField; }
+        set { _someBackingField = string.IsNullOrWhiteSpace(value) ? _someBackingField : value; }
     }
 
-    public string Badge
-    {
-        get { return $"{_firstName} {_lastName} {_department}"; }
-    }
-
-    public string Department
-    {
-        get { return _department; }
-        set { _department = string.IsNullOrWhiteSpace(value) ? _department : value; }
-    }
-
-    // public string Department
+    // public string SomeProperty
     // {
     //     get { return field; }
     //     set { field = string.IsNullOrWhiteSpace(value) ? field : value; }
     // }
+
+    // Example 2 - showcases how backing fields are still needed in some cases
+    private string _someField = "Some Value";
+
+    private string _anotherField = "Another Value";
+
+    public string SomeCompuatedProperty
+    {
+        get { return $"{_someField} {_anotherField}"; }
+    }
 }
