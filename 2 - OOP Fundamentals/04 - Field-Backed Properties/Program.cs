@@ -1,8 +1,8 @@
 ﻿Employee employee = new("John", "Doe", "Marketing");
 Console.WriteLine(employee.Badge);
-Console.WriteLine(employee.Departement);
-employee.Departement = "Sales";
-Console.WriteLine(employee.Departement);
+Console.WriteLine(employee.Department);
+employee.Department = "Sales";
+Console.WriteLine(employee.Department);
 
 class Employee
 {
@@ -10,27 +10,27 @@ class Employee
 
     private string _lastName;
 
-    private string _departement;
+    private string _department;
 
     public Employee(string firstName, string lastName, string departement)
     {
         _firstName = firstName;
         _lastName = lastName;
-        _departement = departement;
+        _department = departement;
     }
 
     public string Badge
     {
-        get { return $"{_firstName} {_lastName} {_departement}"; }
+        get { return $"{_firstName} {_lastName} {_department}"; }
     }
 
-    public string Departement
+    public string Department
     {
-        get { return _departement; }
-        set { _departement = string.IsNullOrWhiteSpace(value) ? _departement : value; }
+        get { return _department; }
+        set { _department = string.IsNullOrWhiteSpace(value) ? _department : value; }
     }
 
-    // public string Departement
+    // public string Department
     // {
     //     get { return field; }
     //     set { field = string.IsNullOrWhiteSpace(value) ? field : value; }
