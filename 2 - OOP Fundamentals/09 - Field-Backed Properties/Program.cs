@@ -25,7 +25,7 @@ class SomeClass
     //     set => field = string.IsNullOrWhiteSpace(value) ? field : value;
     // }
 
-    // Example 2 - showcases how backing fields are still needed in some cases
+    // Example 2 - showcases the need for fields
     private string _someField = "Some Value";
     private string _anotherField = "Another Value";
 
