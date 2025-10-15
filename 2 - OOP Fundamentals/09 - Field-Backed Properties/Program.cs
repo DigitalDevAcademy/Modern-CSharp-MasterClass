@@ -1,10 +1,10 @@
-﻿SomeClass someClass = new();
-Console.WriteLine(someClass.SomeProperty);
-someClass.SomeProperty = string.Empty;
-Console.WriteLine(someClass.SomeProperty);
-someClass.SomeProperty = "Another Value";
-Console.WriteLine(someClass.SomeProperty);
-Console.WriteLine(someClass.SomeCompuatedProperty);
+﻿SomeClass someObject = new();
+Console.WriteLine(someObject.SomeProperty);
+someObject.SomeProperty = string.Empty;
+Console.WriteLine(someObject.SomeProperty);
+someObject.SomeProperty = "Another Value";
+Console.WriteLine(someObject.SomeProperty);
+Console.WriteLine(someObject.SomeCompuatedProperty);
 
 class SomeClass
 {
