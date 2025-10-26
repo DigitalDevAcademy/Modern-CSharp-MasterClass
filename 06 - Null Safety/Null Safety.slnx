@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="01 - Nullable Value Types/01 - Nullable Value Types.csproj" />
+  <Project Path="02 - Nullable Reference Types/02 - Nullable Reference Types.csproj" />
+  <Project Path="03 - Null-Forgiving Operator/03 - Null-Forgiving Operator.csproj" />
+  <Project Path="04 - Null-Coalescing Operator/04 - Null-Coalescing Operator.csproj" />
+  <Project Path="05 - Null-Coalescing Assignment/05 - Null-Coalescing Assignment.csproj" />
+  <Project Path="06 - Null-Conditional Operator/06 - Null-Conditional Operator.csproj" />
+  <Project Path="07 - Null-Conditional Assignment/07 - Null-Conditional Assignment.csproj" />
+</Solution>
