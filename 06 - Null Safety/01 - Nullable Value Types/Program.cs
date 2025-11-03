@@ -1,26 +1,26 @@
-﻿User user1 = new() { FirstName = "John", LastName = "Doe" };
-User user2 = new() { FirstName = "Mark", LastName = "Doe",  Age = 30};
+﻿Book book1 = new() { Title = "New Book", Author = "John Doe" };
+Book book2 = new() { Title = "Established Book", Author = "Famous Author",  Rating = 5};
 
-PrintAgeInfo(user1);
-PrintAgeInfo(user2);
+PrintBookInfo(book1);
+PrintBookInfo(book2);
 
-void PrintAgeInfo(User user)
+void PrintBookInfo(Book book)
 {
-    if (user.Age is int age)
+    if (book.Rating is double rating)
     {
-        Console.WriteLine($"{user.FirstName} {user.LastName} is {age} years old.");
+        Console.WriteLine($"{book.Title} is written by {book.Author} and has a rating of {rating} stars");
     }
     else
     {
-        Console.WriteLine($"{user.FirstName} {user.LastName} did not specify their age.");
+        Console.WriteLine($"{book.Title} is written by {book.Author}");
     }
 }
 
-class User
+class Book
 {
-    public required string FirstName { get; set; }
+    public required string Title { get; init; }
 
-    public required string LastName { get; set; }
+    public required string Author { get; init; }
 
-    public int? Age { get; set; }
+    public double? Rating { get; init; }
 }
