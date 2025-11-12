@@ -35,7 +35,7 @@ class Person
 
     public string LastName { get; init; }
     
-    public Address? CurrentAddress { get; set; }
+    public Address? CurrentAddress { get; init; }
 }
 
 class Address(string addressLine, string city, string state, string postalCode, string country)
