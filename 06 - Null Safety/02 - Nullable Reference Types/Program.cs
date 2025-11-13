@@ -18,31 +18,24 @@ void PersonCityFinder(Person person)
     }
 }
 
-class Person
+class Person(string firstName, string lastName, Address? address = null)
 {
-    public Person(string firstName, string lastName) : this(firstName, lastName, null)
-    {
-    }
+    public string FirstName { get; init; } = firstName;
 
-    public Person(string firstName, string lastName, Address? address)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-        CurrentAddress = address;
-    }
-
-    public string FirstName { get; init; }
-
-    public string LastName { get; init; }
+    public string LastName { get; init; } = lastName;
     
-    public Address? CurrentAddress { get; init; }
+    public Address? CurrentAddress { get; init; } = address;
 }
 
 class Address(string addressLine, string city, string state, string postalCode, string country)
 {
     public string AddressLine { get; init; } = addressLine;
+
     public string City { get; init; } = city;
+    
     public string State { get; init; } = state;
+    
     public string PostalCode { get; init; } = postalCode;
+    
     public string Country { get; init; } = country;
 }
