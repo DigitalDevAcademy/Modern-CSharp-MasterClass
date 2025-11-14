@@ -8,7 +8,7 @@ void PrintBookInfo(Book book)
 {
     if (book.AverageRating is double ar)
     {
-        Console.WriteLine($"{book.Title} is written by {book.Author} and has a rating of {ar} stars");
+        Console.WriteLine($"{book.Title} is written by {book.Author} and has an average rating of {ar} stars");
     }
     else
     {
