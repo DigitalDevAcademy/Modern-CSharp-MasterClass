@@ -19,6 +19,7 @@ Please check below to see all of the latest concepts covered in the course (more
 | C# Version | .NET Version | Feature Description |
 |------------------|-------------------|------------------------|
 | ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview](https://img.shields.io/badge/.NET-10.0-yellow) | File-based apps |
+| ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview](https://img.shields.io/badge/.NET-10.0-yellow) | Null-conditional assignment |
 | ![C# 14.0](https://img.shields.io/badge/C%23-14.0-blue) | ![.NET 10 Preview](https://img.shields.io/badge/.NET-10.0-yellow) | Field-backed properties |
 | ![C# 13.0](https://img.shields.io/badge/C%23-13.0-blue) | ![.NET 9](https://img.shields.io/badge/.NET-9.0-yellow) | New .slnx solution format |
 | ![C# 12.0](https://img.shields.io/badge/C%23-12.0-blue) | ![.NET 8](https://img.shields.io/badge/.NET-8.0-yellow) | Collection expression |
@@ -34,6 +35,9 @@ Please check below to see all of the latest concepts covered in the course (more
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Top-level statements |
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Target-typed new expression |
 | ![C# 9.0](https://img.shields.io/badge/C%23-9.0-blue) | ![.NET 5](https://img.shields.io/badge/.NET-5.0-yellow) | Init only setters |
+| ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Nullable reference types |
+| ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Null-forgiving operator |
+| ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Null-coalescing assignment |
 | ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Default interface members |
 | ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Interface member access modifiers |
 | ![C# 8.0](https://img.shields.io/badge/C%23-8.0-blue) | ![.NET Core 3.0](https://img.shields.io/badge/.NET%20Core-3.0-yellow) | Verbatim string literal improvement |
