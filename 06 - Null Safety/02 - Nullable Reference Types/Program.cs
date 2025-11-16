@@ -8,9 +8,9 @@ PersonCityFinder(person2);
 
 void PersonCityFinder(Person person)
 {
-    if (person.CurrentAddress is Address a)
+    if (person.CurrentAddress is Address ca)
     {
-        Console.WriteLine($"{person.FirstName} {person.LastName} is currently in {a.City} city.");
+        Console.WriteLine($"{person.FirstName} {person.LastName} is currently in {ca.City} city.");
     }
     else
     {
