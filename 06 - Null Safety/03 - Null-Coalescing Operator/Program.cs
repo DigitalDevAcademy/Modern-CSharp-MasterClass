@@ -7,9 +7,9 @@ void AutoSetAndDisplayFormat(ReportOptions reportOptions)
     ExportOptions custom = new() { Format = ExportFormat.Html };
     ExportOptions fallback = new() { Format = ExportFormat.Word };
     
-    // if (customExportOptions is not null)
+    // if (custom is not null)
     // {
-    //     reportOptions.Export = custom; 
+    //     reportOptions.Export = custom;
     // }
     // else
     // {
