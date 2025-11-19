@@ -1,41 +1,41 @@
-﻿SomeConfig someConfig = new();
-someConfig.Root = new(1);
-someConfig.Root.Child = new(2);
-someConfig.Root.Child.Child = new(3);
-someConfig.Root.Child.Child.Child = new(4);
+﻿ReportOptions reportOptions1 = new() { Title = "Annual Report 1", Export = new()};
+ReportOptions reportOptions2 = new() { Title = "Annual Report 2", };
 
-// if (someConfig is SomeConfig sc)
-// {
-//     if (sc.Root is Node root)
-//     {
-//         if (root.Child is Node node1)
-//         {
-//             if (node1.Child is Node node2)
-//             {
-//                 if (node2.Child is Node node3)
-//                 {
-//                     Console.WriteLine(node3.Value);
-//                 }   
-//             }
-//         }
-//     }
-// }
+ExportReport(reportOptions1);
+ExportReport(reportOptions2);
 
-Console.WriteLine(someConfig.Root?.Child?.Child?.Child?.Value);
-
-class SomeConfig
+void ExportReport(ReportOptions reportOptions)
 {
-    public Node? Root { get; set; }
+    Console.WriteLine(reportOptions.Title);
+    
+    // Legacy
+    // if (reportOptions.Export != null && reportOptions.Export.Format == ExportFormat.Pdf)
+    // {
+    //     Console.WriteLine("Exporting PDF report.");
+    // }
+
+    // Modern
+    if (reportOptions.Export?.Format == ExportFormat.Pdf)
+    {
+        Console.WriteLine("Exporting PDF report.");
+    }
 }
 
-class Node
+class ReportOptions
 {
-    public Node(int value)
-    {
-        Value = value;
-    }
+    public required string Title { get; init; }
 
-    public Node? Child { get; set; }
+    public ExportOptions? Export { get; set; }
+}
 
-    public int Value { get; set; }
+class ExportOptions
+{
+    public ExportFormat Format { get; set; }
+}
+
+public enum ExportFormat
+{
+    Pdf,
+    Word,
+    Html
 }
