@@ -8,13 +8,11 @@ void SetAndDisplayFormat(ReportOptions reportOptions, ExportFormat format)
 {
     Console.WriteLine(reportOptions.Title);
 
-    // Legacy
     // if (reportOptions.Export is not null)
     // {
     //     reportOptions.Export.Format = format;
     // }
 
-    // Modern
     reportOptions.Export?.Format = format;
 
     Console.WriteLine($"Format: {reportOptions.Export?.Format}");

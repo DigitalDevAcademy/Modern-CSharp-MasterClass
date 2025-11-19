@@ -1,18 +1,17 @@
 ﻿ReportOptions reportOptions = new() { Title = "Annual Report", Export = new() { Format = ExportFormat.Html }};
-ExportOptions fallbackExportOptions = new() { Format = ExportFormat.Word };
 
-ResolveAndDisplayFormat(reportOptions, fallbackExportOptions);
+ResolveAndDisplayFormat(reportOptions);
 
-void ResolveAndDisplayFormat(ReportOptions reportOptions, ExportOptions fallbackExportOptions)
+void ResolveAndDisplayFormat(ReportOptions reportOptions)
 {
-    // Legacy
+    ExportOptions fallback = new() { Format = ExportFormat.Word };
+
     // if (reportOptions.Export is null)
     // {
-    //     reportOptions.Export = fallbackExportOptions;
+    //     reportOptions.Export = fallback;
     // }
 
-    // Modern
-    reportOptions.Export ??= fallbackExportOptions;
+    reportOptions.Export ??= fallback;
 
     Console.WriteLine($"Format: {reportOptions.Export.Format}");
 }

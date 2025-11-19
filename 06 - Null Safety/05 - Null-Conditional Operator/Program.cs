@@ -8,13 +8,11 @@ void ExportReport(ReportOptions reportOptions)
 {
     Console.WriteLine(reportOptions.Title);
     
-    // Legacy
-    // if (reportOptions.Export != null && reportOptions.Export.Format == ExportFormat.Pdf)
+    // if (reportOptions.Export is not null && reportOptions.Export.Format == ExportFormat.Pdf)
     // {
     //     Console.WriteLine("Exporting PDF report.");
     // }
 
-    // Modern
     if (reportOptions.Export?.Format == ExportFormat.Pdf)
     {
         Console.WriteLine("Exporting PDF report.");
