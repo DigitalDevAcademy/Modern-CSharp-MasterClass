@@ -1,21 +1,21 @@
 ﻿ReportOptions reportOptions = new();
-ExportOptions? custom = null;
-ExportOptions fallback = new() { Format = ExportFormat.Word };
+ExportOptions? exportOptions = new () { Format = ExportFormat.Html };
+ExportOptions exportOptionsFallback = new() { Format = ExportFormat.Word };
 
-if (custom is not null)
+if (exportOptions is not null)
 {
-    reportOptions.Export = custom;
+    reportOptions.Export = exportOptions;
 }
 else
 {
-    reportOptions.Export = fallback;
+    reportOptions.Export = exportOptionsFallback;
 }
 Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
-reportOptions.Export = custom is not null ? custom : fallback;
+reportOptions.Export = exportOptions is not null ? exportOptions : exportOptionsFallback;
 Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
-reportOptions.Export = custom ?? fallback;
+reportOptions.Export = exportOptions ?? exportOptionsFallback;
 Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
 class ReportOptions
