@@ -1,25 +1,17 @@
-﻿ReportOptions reportOptions = new() { Title = "Annual Report", Export = new() { Format = ExportFormat.Html }};
+﻿ReportOptions reportOptions = new() { Export = new() { Format = ExportFormat.Html }};
+ExportOptions fallback = new() { Format = ExportFormat.Word };
 
-ResolveAndDisplayFormat(reportOptions);
-
-void ResolveAndDisplayFormat(ReportOptions reportOptions)
+if (reportOptions.Export is null)
 {
-    ExportOptions fallback = new() { Format = ExportFormat.Word };
-
-    // if (reportOptions.Export is null)
-    // {
-    //     reportOptions.Export = fallback;
-    // }
-
-    reportOptions.Export ??= fallback;
-
-    Console.WriteLine($"Format: {reportOptions.Export.Format}");
+    reportOptions.Export = fallback;
 }
+Console.WriteLine($"Format: {reportOptions.Export.Format}");
+
+reportOptions.Export ??= fallback;
+Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
 class ReportOptions
 {
-    public required string Title { get; init; }
-
     public ExportOptions? Export { get; set; }
 }
 
