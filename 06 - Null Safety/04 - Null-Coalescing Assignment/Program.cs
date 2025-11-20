@@ -1,13 +1,13 @@
 ﻿ReportOptions reportOptions = new() { Export = new() { Format = ExportFormat.Html }};
-ExportOptions fallback = new() { Format = ExportFormat.Word };
+ExportOptions exportOptionsFallback = new() { Format = ExportFormat.Word };
 
 if (reportOptions.Export is null)
 {
-    reportOptions.Export = fallback;
+    reportOptions.Export = exportOptionsFallback;
 }
 Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
-reportOptions.Export ??= fallback;
+reportOptions.Export ??= exportOptionsFallback;
 Console.WriteLine($"Format: {reportOptions.Export.Format}");
 
 class ReportOptions
