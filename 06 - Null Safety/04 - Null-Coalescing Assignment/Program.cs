@@ -1,4 +1,4 @@
-﻿ReportOptions reportOptions = new() { Export = new() { Format = ExportFormat.Html }};
+﻿ReportOptions reportOptions = new() { Export = new() };
 ExportOptions exportOptionsFallback = new() { Format = ExportFormat.Word };
 
 if (reportOptions.Export is null)
@@ -17,12 +17,11 @@ class ReportOptions
 
 class ExportOptions
 {
-    public ExportFormat Format { get; set; }
+    public ExportFormat Format { get; set; } = ExportFormat.Excel;
 }
 
 public enum ExportFormat
 {
-    Pdf,
-    Word,
-    Html
+    Excel,
+    Word
 }
