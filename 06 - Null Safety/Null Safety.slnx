@@ -2,7 +2,7 @@
   <Project Path="01 - Nullable Value Types/01 - Nullable Value Types.csproj" />
   <Project Path="02 - Nullable Reference Types/02 - Nullable Reference Types.csproj" />
   <Project Path="03 - Null-Coalescing Operator/03 - Null-Coalescing Operator.csproj" />
-  <Project Path="04 - Null-Coalescing Assignment/04 - Null-Coalescing Assignment.csproj" />
+  <Project Path="04 - Null-Coalescing Assignment Operator/04 - Null-Coalescing Assignment Operator.csproj" />
   <Project Path="05 - Null-Conditional Operator/05 - Null-Conditional Operator.csproj" />
-  <Project Path="06 - Null-Conditional Assignment/06 - Null-Conditional Assignment.csproj" />
+  <Project Path="06 - Null-Conditional Assignment Operator/06 - Null-Conditional Assignment Operator.csproj" />
 </Solution>

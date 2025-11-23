@@ -1,39 +1,32 @@
-﻿ReportOptions reportOptions1 = new() { Title = "Annual Report 1", Export = new()};
-ReportOptions reportOptions2 = new() { Title = "Annual Report 2", };
+﻿ReportOptions reportOptions = new() { Export = new() };
 
-ExportReport(reportOptions1);
-ExportReport(reportOptions2);
-
-void ExportReport(ReportOptions reportOptions)
+if (reportOptions.Export is not null && reportOptions.Export.Format == ExportFormat.Excel)
 {
-    Console.WriteLine(reportOptions.Title);
-    
-    // if (reportOptions.Export is not null && reportOptions.Export.Format == ExportFormat.Pdf)
-    // {
-    //     Console.WriteLine("Exporting PDF report.");
-    // }
+    Console.WriteLine("Exporting Excel report.");
+}
 
-    if (reportOptions.Export?.Format == ExportFormat.Pdf)
-    {
-        Console.WriteLine("Exporting PDF report.");
-    }
+if (reportOptions.Export?.Format == ExportFormat.Excel)
+{
+    Console.WriteLine("Exporting Excel report.");
 }
 
 class ReportOptions
 {
-    public required string Title { get; init; }
-
     public ExportOptions? Export { get; set; }
 }
 
 class ExportOptions
 {
-    public ExportFormat Format { get; set; }
+    public ExportFormat Format { get; set; } = ExportFormat.Excel;
 }
 
 public enum ExportFormat
 {
-    Pdf,
-    Word,
-    Html
+    Excel,
+    Word
+}
+
+struct blah
+{
+    public decimal value;
 }
