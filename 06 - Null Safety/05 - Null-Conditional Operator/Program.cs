@@ -25,8 +25,3 @@ public enum ExportFormat
     Excel,
     Word
 }
-
-struct blah
-{
-    public decimal value;
-}
