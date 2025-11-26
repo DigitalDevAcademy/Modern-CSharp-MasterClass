@@ -2,12 +2,20 @@
 
 if (reportOptions.Export is not null && reportOptions.Export.Format == ExportFormat.Excel)
 {
-    Console.WriteLine("Exporting Excel report.");
+    Console.WriteLine("Exporting Excel report");
+}
+else
+{
+    Console.WriteLine("Invalid or unexpected export options");
 }
 
 if (reportOptions.Export?.Format == ExportFormat.Excel)
 {
-    Console.WriteLine("Exporting Excel report.");
+    Console.WriteLine("Exporting Excel report");
+}
+else
+{
+    Console.WriteLine("Invalid or unexpected export options");
 }
 
 class ReportOptions
