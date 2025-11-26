@@ -1,13 +1,17 @@
-﻿ReportOptions reportOptions = new();
+﻿ReportOptions? reportOptions = new();
 
-if (reportOptions.Export is not null)
+if (reportOptions is not null)
 {
-    reportOptions.Export.Format = ExportFormat.Word;
+    reportOptions.Export = GetDefaultExportOptions();
 }
-Console.WriteLine($"Format: {reportOptions.Export?.Format}");
 
-reportOptions.Export?.Format = ExportFormat.Word;
-Console.WriteLine($"Format: {reportOptions.Export?.Format}");
+reportOptions?.Export = GetDefaultExportOptions();
+
+ExportOptions GetDefaultExportOptions()
+{
+    Console.WriteLine("Loading export options...");
+    return new();
+}
 
 class ReportOptions
 {
