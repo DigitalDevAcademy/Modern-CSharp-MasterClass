@@ -1,4 +1,4 @@
-﻿int[] numbers = [ 1, 2, 3, -4, 5 ]; // Sorted array in ascending order
+﻿int[] numbers = [ 1, 2, 3, 4, 5 ]; // Sorted array in ascending order
 
 SimpleIteration1(numbers);
 
