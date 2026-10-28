@@ -11,7 +11,7 @@ int secondNumber = 10;
 int variableSum = firstNumber + secondNumber;
 Console.WriteLine(variableSum);
 
-// Expression using logical not unary opeartor
+// Expression using logical not unary operator
 bool isEnabled = !false;
 Console.WriteLine(isEnabled);
 

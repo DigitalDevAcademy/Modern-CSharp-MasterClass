@@ -32,7 +32,7 @@ double calculationResult = 15009090.132453849519;
  */
 decimal accountBalance = 100500.1050m;
 
-// Used for logical conditions, only has two valeus - true or false
+// Used for logical conditions, only has two values - true or false
 bool isUserLoggedIn = true;
 
 // Used for single characters
